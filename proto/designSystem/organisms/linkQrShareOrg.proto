@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/paginationMessageMlc.proto";
+import "designSystem/organisms/centerChipBlackTabsOrg.proto";
+import "designSystem/organisms/linkSharingOrg.proto";
+import "designSystem/organisms/qrCodeOrg.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message LinkQrShareOrg {
+  reserved 6;
+
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  optional ua.gov.diia.types.ds.organisms.CenterChipBlackTabsOrg centerChipBlackTabsOrg = 3;
+  optional ua.gov.diia.types.ds.organisms.LinkSharingOrg linkSharingOrg = 4;
+  optional ua.gov.diia.types.ds.organisms.QrCodeOrg qrCodeOrg = 5;
+}

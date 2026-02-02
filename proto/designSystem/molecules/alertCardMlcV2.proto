@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/btnPrimaryAdditionalAtm.proto";
+import "designSystem/atoms/iconAtm.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message AlertCardMlcV2 {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  optional ua.gov.diia.types.ds.atoms.IconAtm iconAtm = 3;
+  string label = 4;
+  optional string text = 5;
+  optional ua.gov.diia.types.ds.atoms.BtnPrimaryAdditionalAtm btnPrimaryAdditionalAtm = 6;
+}

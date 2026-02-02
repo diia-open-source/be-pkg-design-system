@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/chipMlc.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message ChipTabsOrg {
+  optional string label = 1;
+  repeated ChipTabsOrgItem items = 2;
+  string preselectedCode = 3;
+  optional string componentId = 4;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 5;
+}
+
+message ChipTabsOrgItem {
+  optional string code = 1; /* @deprecated use chipMlc */
+  optional string label = 2; /* @deprecated use chipMlc */
+  optional int32 count = 3; /* @deprecated use chipMlc */
+  ua.gov.diia.types.ds.molecules.ChipMlc chipMlc = 4;
+}

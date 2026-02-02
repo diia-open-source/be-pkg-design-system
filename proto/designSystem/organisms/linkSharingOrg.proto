@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/btnIconPlainGroupMlc.proto";
+import "designSystem/molecules/linkSharingMlc.proto";
+import "designSystem/molecules/paginationMessageMlc.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message LinkSharingOrg {
+  string componentId = 1;
+  optional string text = 2;
+  optional ua.gov.diia.types.ds.molecules.LinkSharingMlc linkSharingMlc = 3;
+  optional string description = 4;
+  optional ua.gov.diia.types.ds.molecules.BtnIconPlainGroupMlc btnIconPlainGroupMlc = 5;
+  optional ua.gov.diia.types.ds.molecules.PaginationMessageMlc paginationMessageMlc = 6;
+}

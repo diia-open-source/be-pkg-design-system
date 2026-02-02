@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/organisms/checkboxCascadeOrg.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message CheckboxCascadeGroupOrg {
+  optional string componentId = 1;
+  optional string inputCode = 2;
+  optional bool mandatory = 3;
+  repeated Item items = 4;
+  optional int32 minMandatorySelectedItems = 5;
+
+  message Item {
+    ua.gov.diia.types.ds.organisms.CheckboxCascadeOrg checkboxCascadeOrg = 1;
+  }
+}

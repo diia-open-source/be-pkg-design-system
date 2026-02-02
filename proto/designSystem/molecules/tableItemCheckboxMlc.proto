@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/textLabelAtm.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message TableItemCheckboxMlc {
+  message Row {
+    ua.gov.diia.types.ds.atoms.TextLabelAtm textLabelAtm = 1;
+  }
+
+  string componentId = 1;
+  string inputCode = 2;
+  bool mandatory = 3;
+  repeated Row rows = 4;
+  optional bool isSelected = 5;
+  optional bool isEnabled = 6;
+  optional bool isNotFullSelected = 7;
+  optional string dataJson = 8;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 9;
+}

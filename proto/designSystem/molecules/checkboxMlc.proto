@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message CheckboxMlc {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  string inputCode = 3;
+  string label = 4;
+  optional string description = 5;
+  optional bool isSelected = 6;
+  optional bool isEnabled = 7;
+  string id = 8;
+}

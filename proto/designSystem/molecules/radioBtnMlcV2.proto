@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/smallIconAtm.proto";
+import "designSystem/icon.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message RadioBtnMlcV2 {
+  message Icon {
+    string componentId = 1;
+    ua.gov.diia.types.ds.icon.Icon code = 2;
+    optional string accessibilityDescription = 3;
+  }
+
+  string componentId = 1;
+  optional string id = 2;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 3;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconLeft = 4;
+  optional Icon iconRight = 5;
+  optional Icon iconBigRight = 6;
+  string label = 7;
+  optional string description = 8;
+  optional string status = 9;
+  optional bool isSelected = 10;
+  optional bool isEnabled = 11;
+  optional string dataJson = 12;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.atoms;
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.atoms";
+
+enum AmountAtmColour {
+  black = 0;
+  green = 1;
+  red = 2;
+}
+
+message AmountAtm {
+  string componentId = 1;
+  AmountAtmColour colour = 2;
+  string value = 3;
+}

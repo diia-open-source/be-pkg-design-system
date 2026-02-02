@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/iconAction.proto";
+import "designSystem/icon.proto";
+import "designSystem/molecules/attentionIconMessageMlc.proto";
+import "designSystem/molecules/tableItemHorizontalMlc.proto";
+import "designSystem/molecules/tableItemVerticalMlc.proto";
+import "designSystem/molecules/tableMainHeadingMlc.proto";
+import "designSystem/organisms/tableBlockAccordionOrg.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message AccordionOrg {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  string heading = 3;
+  optional string description = 4;
+  optional AccordionOrgStates states = 5;
+  optional AccordionOrgExpandedContent expandedContent = 6;
+}
+
+message AccordionOrgStates {
+  optional bool isExpanded = 1;
+  AccordionOrgIcon expandedIcon = 2;
+  AccordionOrgIcon collapsedIcon = 3;
+}
+
+message AccordionOrgIcon {
+  optional string componentId = 1;
+  ua.gov.diia.types.ds.icon.Icon code = 2;
+  optional string accessibilityDescription = 3;
+  optional ua.gov.diia.types.ds.atoms.icon.IconAction action = 4;
+}
+
+message AccordionOrgExpandedContent {
+  repeated AccordionOrgExpandedContentItem items = 1;
+}
+
+message AccordionOrgExpandedContentItem {
+  optional ua.gov.diia.types.ds.molecules.TableItemVerticalMlc tableItemVerticalMlc = 1;
+  optional ua.gov.diia.types.ds.molecules.TableItemHorizontalMlc tableItemHorizontalMlc = 2;
+}

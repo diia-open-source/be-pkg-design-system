@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/dotNavigationAtm.proto";
+import "designSystem/molecules/imageCardMlc.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message ImageCardCarouselOrg {
+  optional string componentId = 1;
+  ua.gov.diia.types.ds.atoms.DotNavigationAtm dotNavigationAtm = 2;
+  repeated ImageCardCarouselItems items = 3;
+}
+
+message ImageCardCarouselItems {
+  optional ua.gov.diia.types.ds.molecules.ImageCardMlc imageCardMlc = 1;
+}

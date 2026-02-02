@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/chipStatusAtm.proto";
+import "designSystem/atoms/smallIconUrlAtm.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message SmallNotificationMlc {
+  string label = 1;
+  string text = 2;
+  string id = 3;
+  optional SmallNoitificationAction action = 4;
+  optional ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 5;
+  optional ua.gov.diia.types.ds.atoms.SmallIconUrlAtm smallIconUrlAtm = 6;
+  optional string accessibilityDescription = 7;
+}
+
+message SmallNoitificationAction {
+  string type = 1;
+  optional string subtype = 2;
+  optional string resource = 3;
+}

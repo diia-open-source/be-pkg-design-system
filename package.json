@@ -1,0 +1,53 @@
+{
+    "name": "@diia-inhouse/design-system",
+    "version": "2.7.0",
+    "description": "Design system types and utils",
+    "main": "dist/index.js",
+    "types": "dist/types/index.d.ts",
+    "author": "Diia",
+    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "engines": {
+        "node": ">=22"
+    },
+    "scripts": {
+        "prebuild": "rimraf dist",
+        "build": "npm run genproto && npx tsc && cp -r proto dist/proto",
+        "semantic-release": "semantic-release",
+        "lint": "eslint . && prettier --check . && buf format ./proto --diff --exit-code ",
+        "lint-fix": "eslint --fix . && prettier --write . && buf format ./proto --write",
+        "lint:lockfile": "lockfile-lint --path package-lock.json --allowed-hosts registry.npmjs.org --validate-https",
+        "prepare": "npm run build",
+        "find-circulars": "npx madge --circular --extensions ts ./",
+        "genproto": "npx genproto --outputDir src/generated"
+    },
+    "repository": "git@gitlab.diia.org.ua:diia-inhouse/pkg-design-system.git",
+    "dependencies": {
+        "@types/node": "22.14.1",
+        "protobufjs": "7.2.5"
+    },
+    "devDependencies": {
+        "@bufbuild/buf": "1.50.0",
+        "@diia-inhouse/configs": "6.1.1",
+        "@diia-inhouse/eslint-config": "8.2.3",
+        "@diia-inhouse/genproto": "2.1.6",
+        "eslint": "9.26.0",
+        "lockfile-lint": "4.14.0",
+        "rimraf": "6.0.1",
+        "semantic-release": "24.2.3",
+        "ts-proto": "1.181.1",
+        "typescript": "5.8.3"
+    },
+    "release": {
+        "extends": "@diia-inhouse/configs/dist/semantic-release/package"
+    },
+    "commitlint": {
+        "extends": "@diia-inhouse/configs/dist/commitlint"
+    },
+    "prettier": "@diia-inhouse/eslint-config/prettier",
+    "madge": {
+        "tsConfig": "./tsconfig.json"
+    }
+}

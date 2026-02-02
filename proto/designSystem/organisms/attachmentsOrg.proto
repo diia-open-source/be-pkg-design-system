@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/articlePicAtm.proto";
+import "designSystem/atoms/btnAddOptionAtm.proto";
+import "designSystem/atoms/dotNavigationAtm.proto";
+import "designSystem/molecules/articleVideoMlc.proto";
+import "designSystem/molecules/attachmentCardMlc.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message AttachmentsOrgItem {
+  ua.gov.diia.types.ds.molecules.AttachmentCardMlc attachmentCardMlc = 1;
+}
+
+message AttachmentsOrg {
+  optional string componentId = 1;
+  string inputCode = 2;
+  optional int32 minNumber = 3;
+  optional int32 maxNumber = 4;
+  optional bool mandatory = 5;
+  repeated AttachmentsOrgItem items = 6;
+  optional ua.gov.diia.types.ds.atoms.BtnAddOptionAtm btnAddOptionAtm = 7;
+}

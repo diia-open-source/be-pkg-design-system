@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/chipStatusAtm.proto";
+import "designSystem/atoms/mediumIconAtm.proto";
+import "designSystem/molecules/attentionIconMessageMlc.proto";
+import "designSystem/molecules/listItemMlc.proto";
+import "designSystem/molecules/tableItemHorizontalMlc.proto";
+import "designSystem/molecules/tableItemVerticalMlc.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message ScanModalCardOrg {
+  message TableItem {
+    optional ua.gov.diia.types.ds.molecules.TableItemHorizontalMlc tableItemHorizontalMlc = 1;
+    optional ua.gov.diia.types.ds.molecules.TableItemVerticalMlc tableItemVerticalMlc = 2;
+  }
+
+  message ListItem {
+    optional ua.gov.diia.types.ds.molecules.ListItemMlc listItemMlc = 1;
+  }
+
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 2;
+  string title = 3;
+  optional string description = 4;
+  repeated TableItem tableItems = 5;
+  optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 6;
+  repeated ListItem items = 7;
+  optional ua.gov.diia.types.ds.atoms.MediumIconAtm mediumIconAtm = 8;
+}

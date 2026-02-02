@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/btnStrokeAdditionalAtm.proto";
+import "designSystem/atoms/smallIconAtm.proto";
+import "designSystem/atoms/textParameterAtm.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+enum BackgroundMode {
+  info = 0;
+  note = 1;
+}
+
+message AttentionIconMessageMlc {
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm smallIconAtm = 1;
+  string text = 2;
+  BackgroundMode backgroundMode = 3;
+  optional string componentId = 4;
+  repeated ua.gov.diia.types.ds.atoms.TextParameterAtm parameters = 5;
+  optional Expanded expanded = 6;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 7;
+  optional ua.gov.diia.types.ds.atoms.BtnStrokeAdditionalAtm btnStrokeAdditionalAtm = 8;
+}
+
+message Expanded {
+  string expandedText = 1;
+  string collapsedText = 2;
+  bool isExpanded = 3;
+}

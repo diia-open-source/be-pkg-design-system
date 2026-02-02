@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/listItemMlc.proto";
+import "designSystem/molecules/paginationMessageMlc.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message SelectorOrgV2 {
+  string componentId = 1;
+  string inputCode = 2;
+  optional bool mandatory = 3;
+  string label = 4;
+  string placeholder = 5;
+  optional string hint = 6;
+  optional string valueId = 7;
+  optional string value = 8;
+  optional bool isEnabled = 9;
+  optional SearchScreenData searchScreenData = 10;
+  optional Action action = 11;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 12;
+
+  message SearchScreenData {
+    optional string searchScreenTitle = 1;
+    string searchPlaceholder = 2;
+    repeated ua.gov.diia.types.ds.molecules.ListItemMlc items = 3;
+    optional ua.gov.diia.types.ds.molecules.PaginationMessageMlc paginationMessageMlc = 4;
+  }
+
+  message Action {
+    string type = 1;
+    optional string subtype = 2;
+    optional string resource = 3;
+  }
+}

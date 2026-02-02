@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/chipStatusAtm.proto";
+import "designSystem/atoms/extraSmallIconAtm.proto";
+import "designSystem/atoms/smallIconAtm.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message TransparentInfoCardMlc {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  string label = 3;
+  optional ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 4;
+  repeated TransparentInfoCardRow rows = 5;
+  optional TransparentInfoCardBottomRightLabel bottomRightLabel = 6;
+  optional TransparentInfoCardAction action = 7;
+  optional string description = 8;
+}
+
+message TransparentInfoCardRow {
+  optional ua.gov.diia.types.ds.atoms.ExtraSmallIconAtm iconLeft = 1;
+  optional string label = 2;
+  optional string value = 3;
+}
+
+message TransparentInfoCardBottomRightLabel {
+  optional string text = 1;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconRight = 2;
+}
+
+message TransparentInfoCardAction {
+  string type = 1;
+  optional string subtype = 2;
+  optional string resource = 3;
+}

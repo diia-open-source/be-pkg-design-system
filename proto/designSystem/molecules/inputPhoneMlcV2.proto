@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/validationAtm.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message InputPhoneMlcV2 {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  optional string inputCode = 3;
+  optional string label = 4;
+  optional string placeholder = 5;
+  optional string hint = 6;
+  optional string mask = 7;
+  optional string value = 8;
+  optional bool mandatory = 9;
+  repeated ua.gov.diia.types.ds.atoms.ValidationAtm validation = 10;
+}

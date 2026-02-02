@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.contextmenu;
+
+import "publicServiceStatus.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds";
+
+enum PublicServiceContextMenuType {
+  faqCategory = 0;
+  tips = 1;
+  supportServiceScreen = 2;
+  assistantScreen = 3;
+  communityContacts = 4;
+  pollArchive = 5;
+  fundDetails = 6;
+  createContent = 7;
+  rating = 8;
+  downloadList = 9;
+  restoreRecords = 10;
+  onboarding = 11;
+}
+
+message PublicServiceContextMenu {
+  PublicServiceContextMenuType type = 1;
+  string name = 2;
+  optional string code = 3;
+}
+
+message PublicServiceSettings {
+  reserved 13, 10, 9, 8, 6;
+
+  string id = 1;
+  repeated string categories = 2;
+  string code = 3;
+  string name = 4;
+  PublicServiceStatus status = 5;
+  repeated PublicServiceContextMenu contextMenu = 7;
+  int32 sortOrder = 11;
+  map<string, string> locales = 12;
+}
+
+message NavigationPanel {
+  optional string header = 1;
+  repeated PublicServiceContextMenu contextMenu = 2;
+}

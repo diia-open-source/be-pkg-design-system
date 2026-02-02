@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.atoms;
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.atoms";
+
+enum SpacerValue {
+  small = 0;
+  medium = 1;
+  large = 2;
+  extra_large = 3;
+}
+
+message SpacerAtm {
+  optional string componentId = 1;
+  SpacerValue value = 2;
+}

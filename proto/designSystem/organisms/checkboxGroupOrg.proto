@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/checkboxMlc.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message CheckboxGroupOrg {
+  optional string componentId = 1;
+  string inputCode = 2;
+  optional string title = 3;
+  optional bool mandatory = 4;
+  repeated CheckboxGroupOrgItem items = 5;
+  optional int32 minMandatorySelectedItems = 6;
+}
+
+message CheckboxGroupOrgItem {
+  optional ua.gov.diia.types.ds.molecules.CheckboxMlc checkboxMlc = 1;
+}

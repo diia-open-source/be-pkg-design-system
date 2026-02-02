@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message CurrentTimeMlc {
+  reserved 6;
+  reserved "currentMonth";
+
+  optional string componentId = 1;
+  string label = 2;
+  optional CurrentTimeMlcAction action = 3;
+  optional string maxDate = 4;
+  optional string minDate = 5;
+  optional string displayMonth = 7;
+}
+
+message CurrentTimeMlcAction {
+  string type = 1;
+  optional string subtype = 2;
+  optional string resource = 3;
+}

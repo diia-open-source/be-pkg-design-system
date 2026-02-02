@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/attentionIconMessageMlc.proto";
+import "designSystem/molecules/tableMainHeadingMlc.proto";
+import "designSystem/organisms/accordionOrg.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message TableAccordionOrg {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.molecules.TableMainHeadingMlc tableMainHeadingMlc = 2;
+  repeated AccordionItem items = 3;
+  optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 4;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 5;
+}
+
+message AccordionItem {
+  ua.gov.diia.types.ds.organisms.AccordionOrg accordionOrg = 1;
+}

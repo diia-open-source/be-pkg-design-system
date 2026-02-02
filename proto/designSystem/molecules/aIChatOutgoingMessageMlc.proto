@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message AIChatOutgoingMessageMlc {
+  string componentId = 1;
+  repeated AIChatOutgoingMessageContent content = 2;
+  AIChatOutgoingMessageMlcState state = 3;
+  optional AIChatOutgoingMessageAction action = 4;
+}
+
+enum AIChatOutgoingMessageMlcState {
+  draft = 0;
+  default = 1;
+}
+
+message AIChatOutgoingMessageContent {
+  optional string label = 1;
+  optional string description = 2;
+}
+
+message AIChatOutgoingMessageAction {
+  string type = 1;
+  optional string subtype = 2;
+  optional string resource = 3;
+}

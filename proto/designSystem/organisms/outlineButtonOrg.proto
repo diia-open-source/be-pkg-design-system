@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/outlineButtonMlc.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message OutlineButtonOrg {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  repeated Item items = 3;
+
+  message Item {
+    optional ua.gov.diia.types.ds.molecules.OutlineButtonMlc outlineButtonMlc = 1;
+  }
+}

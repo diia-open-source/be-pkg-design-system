@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/smallIconAtm.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message NavigationPanelMlcV2 {
+  reserved 3;
+
+  string componentId = 1;
+  optional bool isClosed = 2;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconLeft = 4;
+  optional string title = 5;
+}

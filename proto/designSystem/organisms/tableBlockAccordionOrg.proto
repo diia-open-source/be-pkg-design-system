@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/tableItemMlc.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message TableBlockAccordionOrg {
+  optional string componentId = 1;
+  string heading = 2;
+  bool isOpen = 3;
+  repeated ua.gov.diia.types.ds.molecules.TableItemMlc items = 4;
+}

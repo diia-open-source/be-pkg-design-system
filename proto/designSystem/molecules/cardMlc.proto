@@ -1,0 +1,73 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/btnPrimaryAdditionalAtm.proto";
+import "designSystem/atoms/btnStrokeAdditionalAtm.proto";
+import "designSystem/atoms/buttonAction.proto";
+import "designSystem/atoms/chipStatusAtm.proto";
+import "designSystem/atoms/enums/tickerAtmType.proto";
+import "designSystem/atoms/iconUrlAtm.proto";
+import "designSystem/atoms/smallIconAtm.proto";
+import "designSystem/atoms/tickerAtm.proto";
+import "designSystem/molecules/attentionIconMessageMlc.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message CardMlc {
+  string id = 1;
+  optional ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 2;
+  optional string label = 3;
+  string title = 4;
+  optional CardMlcSubtitle subtitle = 5;
+  optional string description = 6;
+  optional string botLabel = 7;
+  optional CardMlcTicker ticker = 8;
+  optional ua.gov.diia.types.ds.atoms.TickerAtm tickerAtm = 9;
+  optional ua.gov.diia.types.ds.atoms.BtnPrimaryAdditionalAtm btnPrimaryAdditionalAtm = 10;
+  optional ua.gov.diia.types.ds.atoms.BtnStrokeAdditionalAtm btnStrokeAdditionalAtm = 11;
+  optional string componentId = 12;
+  repeated CardMlcSubtitle subtitles = 13;
+}
+
+message CardMlcSubtitle {
+  optional string icon = 1;
+  string value = 2;
+}
+
+message CardMlcTicker {
+  string text = 1;
+  ua.gov.diia.types.ds.atoms.tickeratm.TickerAtmType type = 2;
+}
+
+message CardMlcV2 {
+  optional string componentId = 1;
+  optional ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 2;
+  string label = 3;
+  repeated string descriptions = 4;
+  repeated CardMlcChip chips = 5;
+  optional ua.gov.diia.types.ds.atoms.IconUrlAtm iconUrlAtm = 6;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm smallIconAtm = 7;
+  optional ua.gov.diia.types.ds.atoms.button.ButtonAction action = 8;
+  repeated string rows = 9;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 10;
+  optional SmallIconAtmWithStates smallIconAtmWithStates = 11;
+  optional string rightLabel = 12;
+  optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 13;
+}
+
+message CardMlcChip {
+  optional ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 1;
+}
+
+message SmallIconAtmWithStates {
+  string currentState = 1;
+  repeated SmallIconAtmState states = 2;
+}
+
+message SmallIconAtmState {
+  string name = 1;
+  ua.gov.diia.types.ds.atoms.SmallIconAtm icon = 2;
+}

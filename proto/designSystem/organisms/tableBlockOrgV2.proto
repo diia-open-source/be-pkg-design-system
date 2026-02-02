@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/chipStatusAtm.proto";
+import "designSystem/molecules/attentionIconMessageMlc.proto";
+import "designSystem/molecules/smallEmojiPanelMlc.proto";
+import "designSystem/molecules/smallEmojiPanelPlaneMlc.proto";
+import "designSystem/molecules/tableItemHorizontalMlc.proto";
+import "designSystem/molecules/tableItemPrimaryMlc.proto";
+import "designSystem/molecules/tableItemVerticalMlc.proto";
+import "designSystem/molecules/tableMainHeadingMlc.proto";
+import "designSystem/molecules/tableSecondaryHeadingMlc.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message TableBlockOrgV2 {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  optional ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 3;
+  optional ua.gov.diia.types.ds.molecules.TableMainHeadingMlc tableMainHeadingMlc = 4;
+  optional ua.gov.diia.types.ds.molecules.TableSecondaryHeadingMlc tableSecondaryHeadingMlc = 5;
+  repeated TableBlockOrgV2Item items = 6;
+  optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 7;
+}
+
+message TableBlockOrgV2Item {
+  optional ua.gov.diia.types.ds.molecules.SmallEmojiPanelMlc smallEmojiPanelMlc = 1;
+  optional ua.gov.diia.types.ds.molecules.SmallEmojiPanelPlaneMlc smallEmojiPanelPlaneMlc = 2;
+  optional ua.gov.diia.types.ds.molecules.TableItemPrimaryMlc tableItemPrimaryMlc = 3;
+  optional ua.gov.diia.types.ds.molecules.TableItemHorizontalMlc tableItemHorizontalMlc = 4;
+  optional ua.gov.diia.types.ds.molecules.TableItemVerticalMlc tableItemVerticalMlc = 5;
+}

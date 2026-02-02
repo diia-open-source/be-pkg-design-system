@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.atoms;
+
+import "designSystem/atoms/iconAction.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.atoms";
+
+message LogoAtm {
+  message Action {
+    string type = 1;
+    optional string subtype = 2;
+    optional string resource = 3;
+  }
+
+  string componentId = 1;
+  string logo = 2;
+  optional string accessibilityDescription = 3;
+  optional ua.gov.diia.types.ds.atoms.icon.IconAction action = 4;
+}

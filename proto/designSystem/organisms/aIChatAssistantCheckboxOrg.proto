@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/btnPrimaryAdditionalAtm.proto";
+import "designSystem/molecules/checkboxMlc.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message AIChatAssistantCheckboxOrg {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  string inputCode = 3;
+  optional bool mandatory = 4;
+  optional int32 minMandatorySelectedItems = 5;
+  repeated AIChatAssistantCheckboxOrgItem items = 6;
+  optional bool isEnabled = 7;
+  ua.gov.diia.types.ds.atoms.BtnPrimaryAdditionalAtm btnPrimaryAdditionalAtm = 8;
+}
+
+message AIChatAssistantCheckboxOrgItem {
+  optional ua.gov.diia.types.ds.molecules.CheckboxMlc checkboxMlc = 1;
+}

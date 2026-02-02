@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.atoms;
+
+import "designSystem/atoms/enums/tickerAtmType.proto";
+import "designSystem/atoms/textParameterAtm.proto";
+import "designSystem/atoms/tickerAtm.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.atoms";
+
+message LargeTickerAtm {
+  ua.gov.diia.types.ds.atoms.TickerAtmUsage usage = 1;
+  ua.gov.diia.types.ds.atoms.tickeratm.TickerAtmType type = 2;
+  string value = 3;
+  optional ua.gov.diia.types.ds.atoms.TickerAtmAction action = 4;
+  optional string componentId = 5;
+  repeated ua.gov.diia.types.ds.atoms.TextParameterAtm parameters = 6;
+}

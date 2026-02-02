@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/calendarItemAtm.proto";
+import "designSystem/organisms/chipGroupOrg.proto";
+import "designSystem/organisms/chipGroupOrgV2.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+enum LegendType {
+  common = 0;
+  weekend = 1;
+  holiday = 2;
+  initial = 3;
+}
+
+message CalendarItemOrg {
+  string componentId = 1;
+  string date = 2;
+  optional ua.gov.diia.types.ds.atoms.CalendarItemAtm calendarItemAtm = 3;
+  optional ua.gov.diia.types.ds.organisms.ChipGroupOrg chipGroupOrg = 4;
+  optional ua.gov.diia.types.ds.organisms.ChipGroupOrgV2 chipGroupOrgV2 = 5;
+  optional LegendType legendType = 6;
+}

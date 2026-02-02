@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/chipStatusAtm.proto";
+import "designSystem/atoms/playerBtnAtm.proto";
+import "designSystem/atoms/smallIconAtm.proto";
+import "designSystem/molecules/btnIconPlainGroupMlc.proto";
+import "designSystem/organisms/fullScreenVideoOrg.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message AttachmentCardMlcKey {
+  string id = 1;
+  string label = 2;
+  string description = 3;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconRight = 4;
+}
+
+message AttachmentCardMlc {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  string id = 3;
+  optional ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 4;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconRight = 5;
+  string label = 6;
+  optional string description = 7;
+  optional AttachmentCardMlcKey key = 8;
+  optional ua.gov.diia.types.ds.molecules.BtnIconPlainGroupMlc btnIconPlainGroupMlc = 9;
+}

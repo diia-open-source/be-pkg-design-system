@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/amountAtm.proto";
+import "designSystem/atoms/buttonAction.proto";
+import "designSystem/atoms/chipStatusAtm.proto";
+import "designSystem/atoms/enums/buttonStateAtmType.proto";
+import "designSystem/icon.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+enum LegendGroupMlcType {
+  common = 0;
+  weekend = 1;
+  holiday = 2;
+  initial = 3;
+}
+
+message LegendGroupMlc {
+  string componentId = 1;
+  string label = 2;
+  bool isVisible = 3;
+  LegendGroupMlcType type = 4;
+}

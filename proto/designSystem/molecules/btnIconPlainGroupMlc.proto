@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/btnPlainIconAtm.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message BtnIconPlainGroupMlc {
+  optional string componentId = 1;
+  repeated BtnIconPlainGroupMlcItem items = 2;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 3;
+}
+
+message BtnIconPlainGroupMlcItem {
+  ua.gov.diia.types.ds.atoms.BtnPlainIconAtm btnPlainIconAtm = 1;
+}

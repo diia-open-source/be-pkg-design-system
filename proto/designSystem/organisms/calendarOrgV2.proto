@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/iconAtm.proto";
+import "designSystem/molecules/currentTimeMlc.proto";
+import "designSystem/molecules/legendGroupMlc.proto";
+import "designSystem/molecules/paginationMessageMlc.proto";
+import "designSystem/molecules/stubMessageMlc.proto";
+import "designSystem/organisms/calendarItemOrg.proto";
+import "designSystem/organisms/calendarOrg.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message Legend {
+  ua.gov.diia.types.ds.molecules.LegendGroupMlc legendGroupMlc = 1;
+}
+
+message CalendarOrgV2 {
+  string componentId = 1;
+  optional string inputCode = 2;
+  optional bool mandatory = 3;
+  optional ua.gov.diia.types.ds.molecules.CurrentTimeMlc currentTimeMlc = 4;
+  repeated Legend legends = 5;
+  optional ua.gov.diia.types.ds.atoms.IconAtm iconForMovingForward = 6;
+  optional ua.gov.diia.types.ds.atoms.IconAtm iconForMovingBackwards = 7;
+  optional int32 columnsAmount = 8;
+  repeated CalendarOrgItem items = 9;
+  optional ua.gov.diia.types.ds.molecules.PaginationMessageMlc paginationMessageMlc = 10;
+}

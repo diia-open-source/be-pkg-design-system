@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/btnToggleMlc.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message ToggleButtonGroupOrg {
+  repeated ToggleButtonGroupItem items = 1;
+  string preselected = 2;
+  optional string componentId = 3;
+}
+
+message ToggleButtonGroupItem {
+  ua.gov.diia.types.ds.molecules.BtnToggleMlc btnToggleMlc = 1;
+}

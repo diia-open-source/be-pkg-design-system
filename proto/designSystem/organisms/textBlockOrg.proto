@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/squareChipStatusAtm.proto";
+import "designSystem/atoms/textParameterAtm.proto";
+import "designSystem/molecules/attentionIconMessageMlc.proto";
+import "designSystem/molecules/tableItemHorizontalMlc.proto";
+import "designSystem/molecules/tableItemVerticalMlc.proto";
+import "designSystem/molecules/textItemHorizontalMlc.proto";
+import "designSystem/molecules/textItemVerticalMlc.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message TextBlockOrg {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.atoms.SquareChipStatusAtm squareChipStatusAtm = 2;
+  optional string title = 3;
+  optional string text = 4;
+  repeated Item items = 5;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 6;
+  repeated ListItem listItems = 7;
+  optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 8;
+  repeated ua.gov.diia.types.ds.atoms.TextParameterAtm parameters = 9;
+
+  message Item {
+    optional ua.gov.diia.types.ds.molecules.TextItemHorizontalMlc textItemHorizontalMlc = 1;
+    optional ua.gov.diia.types.ds.molecules.TextItemVerticalMlc textItemVerticalMlc = 2;
+  }
+
+  message ListItem {
+    optional ua.gov.diia.types.ds.molecules.TableItemVerticalMlc tableItemVerticalMlc = 1;
+    optional ua.gov.diia.types.ds.molecules.TableItemHorizontalMlc tableItemHorizontalMlc = 2;
+  }
+}

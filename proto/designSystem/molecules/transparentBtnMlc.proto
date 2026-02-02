@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/smallIconAtm.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message TransparentBtnMlc {
+  string componentId = 1;
+  string label = 2;
+  ua.gov.diia.types.ds.atoms.SmallIconAtm iconRight = 3;
+  optional TransparentBtnAction action = 4;
+}
+
+message TransparentBtnAction {
+  string type = 1;
+  optional string subtype = 2;
+  optional string resource = 3;
+}

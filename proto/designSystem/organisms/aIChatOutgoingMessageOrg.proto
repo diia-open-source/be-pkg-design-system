@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/aIChatOutgoingMessageMlc.proto";
+import "designSystem/molecules/transparentInfoCardMlc.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message AIChatOutgoingMessageOrg {
+  string componentId = 1;
+  repeated AIChatOutgoingMessageOrgItem items = 2;
+  AIChatOutgoingMessageOrgState state = 3;
+  optional string message = 4;
+  optional string errorMessage = 5;
+}
+
+enum AIChatOutgoingMessageOrgState {
+  default = 0;
+  sent = 1;
+  pending = 2;
+  failed = 3;
+}
+
+message AIChatOutgoingMessageOrgItem {
+  optional ua.gov.diia.types.ds.molecules.AIChatOutgoingMessageMlc aIChatOutgoingMessageMlc = 1;
+  optional ua.gov.diia.types.ds.molecules.TransparentInfoCardMlc transparentInfoCardMlc = 2;
+}

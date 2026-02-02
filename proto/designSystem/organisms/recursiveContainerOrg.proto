@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/btnAddOptionAtm.proto";
+import "designSystem/atoms/btnWhiteLargeIconAtm.proto";
+import "designSystem/organisms/backgroundWhiteOrg.proto";
+import "designSystem/organisms/inputBlockOrg.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+message RecursiveContainerOrg {
+  string componentId = 1;
+  string inputCode = 2;
+  optional bool mandatory = 3;
+  RecursiveContainerOrgTemplate template = 4;
+  repeated RecursiveContainerOrgItems items = 5;
+  optional int32 maxNumber = 6;
+  optional ua.gov.diia.types.ds.atoms.BtnWhiteLargeIconAtm btnWhiteLargeIconAtm = 7;
+  optional ua.gov.diia.types.ds.atoms.BtnAddOptionAtm btnAddOptionAtm = 8;
+}
+
+message RecursiveContainerOrgTemplate {
+  optional ua.gov.diia.types.ds.organisms.BackgroundWhiteOrg backgroundWhiteOrg = 1;
+  optional ua.gov.diia.types.ds.organisms.InputBlockOrg inputBlockOrg = 2;
+}
+
+message RecursiveContainerOrgItems {
+  optional ua.gov.diia.types.ds.organisms.BackgroundWhiteOrg backgroundWhiteOrg = 1;
+  optional ua.gov.diia.types.ds.organisms.InputBlockOrg inputBlockOrg = 2;
+}

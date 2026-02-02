@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/playerBtnAtm.proto";
+import "designSystem/organisms/fullScreenVideoOrg.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message ArticleVideoMlc {
+  string source = 1;
+  optional ua.gov.diia.types.ds.atoms.PlayerBtnAtm playerBtnAtm = 2;
+  optional string componentId = 3;
+  optional ua.gov.diia.types.ds.organisms.FullScreenVideoOrg fullScreenVideoOrg = 4;
+  optional string thumbnail = 5;
+}

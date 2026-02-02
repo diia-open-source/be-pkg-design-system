@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/buttonAction.proto";
+import "designSystem/atoms/mediumIconAtm.proto";
+import "designSystem/icon.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+message BankingCardMlc {
+  optional string componentId = 1;
+  optional string id = 2;
+  string title = 3;
+  optional string image = 4;
+  optional string gradient = 5;
+  optional string paymentSystemLogo = 6;
+  optional string cardNumMask = 7;
+  optional string expirationDate = 8;
+  repeated BankingCardMlcLogo logos = 9;
+  optional string description = 10;
+  optional ua.gov.diia.types.ds.atoms.button.ButtonAction action = 11;
+  optional string paymentSystemAccessibilityDescription = 12;
+}
+
+message BankingCardMlcLogo {
+  optional ua.gov.diia.types.ds.atoms.MediumIconAtm mediumIconAtm = 1;
+}
