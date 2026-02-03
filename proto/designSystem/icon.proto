@@ -236,5 +236,6 @@ enum Icon {
   closeOverlayIcon = 289;
   infoStroke = 290;
   attentionStroke = 291;
-  // next 292
+  itemInfo = 292;
+  // next 293
 }
