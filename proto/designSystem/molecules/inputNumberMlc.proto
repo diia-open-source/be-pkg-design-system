@@ -3,6 +3,7 @@ syntax = "proto3";
 package ua.gov.diia.types.ds.molecules;
 
 import "designSystem/atoms/smallIconAtm.proto";
+import "designSystem/atoms/validationAtm.proto";
 import "ui.proto";
 
 option java_multiple_files = true;
@@ -22,4 +23,5 @@ message InputNumberMlc {
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 12;
   optional string mask = 13;
   optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconRight = 14;
+  repeated ua.gov.diia.types.ds.atoms.ValidationAtm validation = 15;
 }
