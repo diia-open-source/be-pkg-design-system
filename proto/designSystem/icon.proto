@@ -237,5 +237,6 @@ enum Icon {
   infoStroke = 290;
   attentionStroke = 291;
   itemInfo = 292;
-  // next 293
+  banking = 293;
+  // next 294
 }

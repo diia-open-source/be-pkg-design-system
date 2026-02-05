@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package ua.gov.diia.types.ds.atoms;
 
+import "ui.proto";
+
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.atoms";
 
@@ -9,4 +11,5 @@ message ArticlePicAtm {
   string image = 1;
   optional string componentId = 2;
   optional string accessibilityDescription = 3;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 4;
 }
