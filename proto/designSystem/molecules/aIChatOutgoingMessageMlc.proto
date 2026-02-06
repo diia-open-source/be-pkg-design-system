@@ -14,7 +14,7 @@ message AIChatOutgoingMessageMlc {
 
 enum AIChatOutgoingMessageMlcState {
   draft = 0;
-  default = 1;
+  regular = 1;
 }
 
 message AIChatOutgoingMessageContent {

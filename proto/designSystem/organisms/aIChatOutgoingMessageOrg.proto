@@ -17,7 +17,7 @@ message AIChatOutgoingMessageOrg {
 }
 
 enum AIChatOutgoingMessageOrgState {
-  default = 0;
+  regular = 0;
   sent = 1;
   pending = 2;
   failed = 3;
