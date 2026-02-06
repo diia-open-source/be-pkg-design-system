@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+enum DotChipStatusMlcType {
+  success = 0;
+  pending = 1;
+  fail = 2;
+}
+
+message DotChipStatusMlc {
+  string componentId = 1;
+  string label = 2;
+  bool isVisible = 3;
+  DotChipStatusMlcType type = 4;
+}
