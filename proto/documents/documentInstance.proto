@@ -5,6 +5,7 @@ package ua.gov.diia.types.ds.documents;
 import "designSystem/atoms/chipStatusAtm.proto";
 import "designSystem/atoms/iconAtm.proto";
 import "designSystem/atoms/tickerAtm.proto";
+import "designSystem/molecules/dotChipStatusMlc.proto";
 import "designSystem/molecules/smallEmojiPanelMlc.proto";
 import "designSystem/molecules/subtitleLabelMlc.proto";
 import "designSystem/organisms/chipBlackGroupOrg.proto";
@@ -34,6 +35,7 @@ message FrontCardItem {
   optional ua.gov.diia.types.ds.organisms.TableBlockPlaneOrg tableBlockPlaneOrg = 6;
   optional ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 7;
   optional ua.gov.diia.types.ds.molecules.SmallEmojiPanelMlc smallEmojiPanelMlc = 8;
+  optional ua.gov.diia.types.ds.molecules.DotChipStatusMlc dotChipStatusMlc = 9;
 }
 
 message DocumentFullInfoItem {
