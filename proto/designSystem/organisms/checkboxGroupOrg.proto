@@ -3,6 +3,7 @@ syntax = "proto3";
 package ua.gov.diia.types.ds.organisms;
 
 import "designSystem/molecules/checkboxMlc.proto";
+import "ui.proto";
 
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
@@ -14,6 +15,7 @@ message CheckboxGroupOrg {
   optional bool mandatory = 4;
   repeated CheckboxGroupOrgItem items = 5;
   optional int32 minMandatorySelectedItems = 6;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 7;
 }
 
 message CheckboxGroupOrgItem {
