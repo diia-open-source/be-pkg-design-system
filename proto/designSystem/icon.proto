@@ -239,5 +239,6 @@ enum Icon {
   itemInfo = 292;
   banking = 293;
   filePdf = 294;
-  // next 295
+  timeBlackSquare = 295;
+  // next 296
 }
