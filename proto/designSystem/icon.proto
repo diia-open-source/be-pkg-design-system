@@ -240,5 +240,7 @@ enum Icon {
   banking = 293;
   filePdf = 294;
   timeBlackSquare = 295;
-  // next 296
+  safetyExtendedFeed = 296;
+  linkShare = 297;
+  // next 298
 }
