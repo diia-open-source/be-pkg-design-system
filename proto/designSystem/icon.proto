@@ -242,5 +242,6 @@ enum Icon {
   timeBlackSquare = 295;
   safetyExtendedFeed = 296;
   linkShare = 297;
-  // next 298
+  eExcise = 298;
+  // next 299
 }
