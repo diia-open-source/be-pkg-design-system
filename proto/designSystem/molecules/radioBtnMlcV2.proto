@@ -31,4 +31,5 @@ message RadioBtnMlcV2 {
   optional bool isSelected = 10;
   optional bool isEnabled = 11;
   optional string dataJson = 12;
+  repeated string descriptions = 13;
 }
