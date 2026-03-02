@@ -10,6 +10,9 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1657438457/paginationListWhiteOrg
+ */
 message PaginationListWhiteOrg {
   string componentId = 1;
   repeated PaginationListWhiteOrgItem items = 2;

@@ -9,6 +9,9 @@ import "designSystem/atoms/smallIconAtm.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.atoms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1315602547/button#btnPrimaryPlainIconAtm
+ */
 message BtnPrimaryPlainIconAtm {
   optional string componentId = 1;
   optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconLeft = 2;

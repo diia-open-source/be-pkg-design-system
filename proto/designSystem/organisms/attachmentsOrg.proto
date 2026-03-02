@@ -11,6 +11,10 @@ import "designSystem/molecules/attachmentCardMlc.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see
+ * https://diia.atlassian.net/wiki/spaces/DIIA/pages/2374041601/attachmentsOrg
+ */
 message AttachmentsOrgItem {
   ua.gov.diia.types.ds.molecules.AttachmentCardMlc attachmentCardMlc = 1;
 }

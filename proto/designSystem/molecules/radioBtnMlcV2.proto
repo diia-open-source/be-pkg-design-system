@@ -9,6 +9,9 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2223276149/radioBtnMlcV2
+ */
 message RadioBtnMlcV2 {
   message Icon {
     string componentId = 1;

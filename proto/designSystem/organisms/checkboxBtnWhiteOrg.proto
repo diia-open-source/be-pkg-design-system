@@ -9,6 +9,9 @@ import "designSystem/molecules/checkboxSquareMlc.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1522598266/checkboxBtnWhiteOrg
+ */
 message CheckboxBtnWhiteOrg {
   string componentId = 1;
   optional string id = 2;

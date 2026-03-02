@@ -8,6 +8,9 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2581659681/centerChipTabsOrg
+ */
 message CenterChipTabsOrg {
   string componentId = 1;
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;

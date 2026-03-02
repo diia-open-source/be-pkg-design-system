@@ -8,6 +8,9 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1967489060/checkboxCascadeOrg
+ */
 message CheckboxCascadeOrg {
   message Item {
     ua.gov.diia.types.ds.molecules.TableItemCheckboxMlc tableItemCheckboxMlc = 1;

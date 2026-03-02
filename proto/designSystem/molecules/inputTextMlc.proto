@@ -8,6 +8,10 @@ import "designSystem/atoms/validationAtm.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1363738670/inputTextMlc
+ * @partof designSystem/organisms/inputGroupOrg.proto
+ */
 message InputTextMlc {
   optional string id = 1;
   optional bool blocker = 2;

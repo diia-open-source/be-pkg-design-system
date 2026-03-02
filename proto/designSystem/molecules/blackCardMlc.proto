@@ -10,6 +10,10 @@ import "designSystem/atoms/smallIconAtm.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
+/**
+ @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1358561388/blackCardMlc
+*/
+
 message BlackCardMlc {
   optional ua.gov.diia.types.ds.atoms.SmallIconAtm smallIconAtm = 1;
   optional ua.gov.diia.types.ds.atoms.IconAtm iconAtm = 2;

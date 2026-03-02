@@ -17,6 +17,9 @@ message Legend {
   ua.gov.diia.types.ds.molecules.LegendGroupMlc legendGroupMlc = 1;
 }
 
+/**
+ @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2337636356/calendarOrgV2
+*/
 message CalendarOrgV2 {
   string componentId = 1;
   optional string inputCode = 2;

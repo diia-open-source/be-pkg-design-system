@@ -8,6 +8,10 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
+/**
+ * @see
+ * https://diia.atlassian.net/wiki/spaces/DIIA/pages/1552613387/searchInputMlc
+ */
 message SearchInputMlc {
   message Icon {
     ua.gov.diia.types.ds.icon.Icon code = 1;

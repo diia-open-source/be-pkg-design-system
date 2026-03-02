@@ -5,6 +5,9 @@ package ua.gov.diia.types.ds.molecules;
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2695856196
+ */
 message AIChatOutgoingMessageMlc {
   string componentId = 1;
   repeated AIChatOutgoingMessageContent content = 2;

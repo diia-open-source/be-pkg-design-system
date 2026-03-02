@@ -14,6 +14,9 @@ enum DashboardCardMlcType {
   description = 2;
 }
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1625686059/dashboardCardMlc
+ */
 message DashboardCardMlc {
   string componentId = 1;
   DashboardCardMlcType type = 2;

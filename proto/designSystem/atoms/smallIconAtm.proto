@@ -8,6 +8,10 @@ import "designSystem/icon.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.atoms";
 
+/**
+   @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1373339915/smallIconAtm
+
+*/
 message SmallIconAtm {
   ua.gov.diia.types.ds.icon.Icon code = 1;
   optional string accessibilityDescription = 2;

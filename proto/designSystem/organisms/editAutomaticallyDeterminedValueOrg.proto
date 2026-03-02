@@ -7,6 +7,9 @@ import "designSystem/molecules/inputTextMultilineMlc.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1426882561/editAutomaticallyDeterminedValueOrg
+*/
 message EditAutomaticallyDeterminedValueOrg {
   reserved 5;
   reserved "inputTextMlc";

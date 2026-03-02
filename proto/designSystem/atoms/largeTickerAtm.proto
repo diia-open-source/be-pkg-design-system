@@ -9,6 +9,9 @@ import "designSystem/atoms/tickerAtm.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.atoms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1689812993/largeTickerAtm
+ */
 message LargeTickerAtm {
   ua.gov.diia.types.ds.atoms.TickerAtmUsage usage = 1;
   ua.gov.diia.types.ds.atoms.tickeratm.TickerAtmType type = 2;

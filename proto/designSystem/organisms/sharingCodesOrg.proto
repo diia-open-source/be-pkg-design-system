@@ -9,6 +9,10 @@ import "designSystem/molecules/stubMessageMlc.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see
+ * https://diia.atlassian.net/wiki/spaces/DIIA/pages/1470955528/sharingCodesOrg
+ */
 message SharingCodesOrg {
   message ExpireLabel {
     string expireLabelFirst = 1;

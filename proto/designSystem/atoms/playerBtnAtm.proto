@@ -5,6 +5,10 @@ package ua.gov.diia.types.ds.atoms;
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.atoms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1368096875/playerBtnAtm
+ * @partof designSystem/orgnaisms/fullScreenVideoOrg.proto
+ */
 message PlayerBtnAtm {
   PlayerBtnAtmType type = 1;
   string icon = 2;

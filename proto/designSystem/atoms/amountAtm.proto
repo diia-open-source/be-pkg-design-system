@@ -11,6 +11,9 @@ enum AmountAtmColour {
   red = 2;
 }
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1625751649/amountAtm
+ */
 message AmountAtm {
   string componentId = 1;
   AmountAtmColour colour = 2;

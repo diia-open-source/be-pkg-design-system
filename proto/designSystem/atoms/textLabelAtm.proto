@@ -5,6 +5,9 @@ package ua.gov.diia.types.ds.atoms;
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.atoms";
 
+/**
+ @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1939767328/textLabelAtm
+*/
 message TextLabelAtm {
   enum Mode {
     primary = 0;

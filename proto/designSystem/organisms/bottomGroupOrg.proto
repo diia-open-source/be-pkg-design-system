@@ -14,6 +14,9 @@ import "designSystem/organisms/checkboxBtnOrg.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1363018084/bottomGroupOrg
+ */
 message BottomGroupOrg {
   optional ua.gov.diia.types.ds.atoms.BtnPrimaryDefaultAtm btnPrimaryDefaultAtm = 1;
   optional ua.gov.diia.types.ds.atoms.BtnPlainAtm btnPlainAtm = 2;

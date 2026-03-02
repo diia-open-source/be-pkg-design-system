@@ -5,6 +5,9 @@ package ua.gov.diia.types.ds.organisms;
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/*
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1362264127/mapChipTabsOrg
+ */
 message MapChipTabsOrg {
   message MapChipMlc {
     string componentId = 1;

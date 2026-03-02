@@ -10,6 +10,10 @@ import "designSystem/organisms/inputBlockOrg.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2037448747/recursiveContainerOrg
+ */
+
 message RecursiveContainerOrg {
   string componentId = 1;
   string inputCode = 2;

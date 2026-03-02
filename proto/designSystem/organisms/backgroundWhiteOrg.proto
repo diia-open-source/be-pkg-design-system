@@ -25,6 +25,9 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1932197889/backgroundWhiteOrg
+ */
 message BackgroundWhiteOrg {
   string componentId = 1;
   repeated Item items = 2;

@@ -12,6 +12,9 @@ enum SpacerValue {
   extra_large = 3;
 }
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2069889038/spacerAtm
+ */
 message SpacerAtm {
   optional string componentId = 1;
   SpacerValue value = 2;

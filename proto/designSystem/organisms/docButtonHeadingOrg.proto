@@ -12,6 +12,9 @@ import "designSystem/molecules/stackMlc.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1352957953/docButtonHeadingOrg
+*/
 message DocButtonHeadingOrg {
   reserved 3;
   reserved "ellipseMenu";

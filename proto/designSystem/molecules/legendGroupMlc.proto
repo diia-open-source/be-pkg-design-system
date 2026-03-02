@@ -18,6 +18,9 @@ enum LegendGroupMlcType {
   initial = 3;
 }
 
+/**
+ @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2337734704/legendGroupMlc
+*/
 message LegendGroupMlc {
   string componentId = 1;
   string label = 2;

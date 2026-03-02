@@ -14,6 +14,9 @@ enum ChipStatusAtmType {
   blue = 5;
 }
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1370095617/chipStatusAtm
+ */
 message ChipStatusAtm {
   string code = 1;
   string name = 2;

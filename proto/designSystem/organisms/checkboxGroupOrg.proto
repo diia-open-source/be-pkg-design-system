@@ -8,6 +8,9 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2517205035/checkboxGroupOrg
+ */
 message CheckboxGroupOrg {
   optional string componentId = 1;
   string inputCode = 2;

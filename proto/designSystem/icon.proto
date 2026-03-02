@@ -5,6 +5,9 @@ package ua.gov.diia.types.ds.icon;
 option java_multiple_files = true;
 option java_package = "xua.gov.diia.types.ds.icon";
 
+/**
+ * @see https://www.figma.com/file/vE5oErE2Lr7Nl7F69PJX2O/Design-System-(dev-team-library)?type=design&node-id=1364-6909&mode=design&t=SIK6HJrrDsMkpfww-0
+ */
 enum Icon {
   // Ellipse
   ellipseArmy = 0;

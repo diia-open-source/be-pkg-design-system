@@ -7,6 +7,10 @@ import "designSystem/molecules/verticalCardMlc.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see
+ * https://diia.atlassian.net/wiki/spaces/DIIA/pages/1358692476/verticalCardCarouselOrg
+ */
 message VerticalCardCarouselOrg {
   repeated VerticalCardCarouselOrgItem items = 1;
 }

@@ -9,6 +9,9 @@ import "designSystem/icon.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2091974673/bankingCardMlc
+ */
 message BankingCardMlc {
   optional string componentId = 1;
   optional string id = 2;

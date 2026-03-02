@@ -8,6 +8,9 @@ import "designSystem/icon.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.atoms";
 
+/**
+ @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1373143312/doubleIconAtm
+*/
 message DoubleIconAtm {
   ua.gov.diia.types.ds.icon.Icon code = 1;
   optional ua.gov.diia.types.ds.atoms.icon.IconAction action = 2;

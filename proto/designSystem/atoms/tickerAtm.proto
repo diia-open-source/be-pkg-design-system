@@ -22,6 +22,9 @@ message TickerAtmAction {
   optional string resource = 3;
 }
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1323499568/tickerAtm
+ */
 message TickerAtm {
   TickerAtmUsage usage = 1;
   ua.gov.diia.types.ds.atoms.tickeratm.TickerAtmType type = 2;

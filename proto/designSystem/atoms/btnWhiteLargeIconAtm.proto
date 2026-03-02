@@ -10,6 +10,10 @@ import "designSystem/icon.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.atoms";
 
+/**
+ * @see
+ * https://diia.atlassian.net/wiki/spaces/DIIA/pages/1315602547/button#btnWhiteLargeIconAtm
+ */
 message BtnWhiteLargeIconAtm {
   string componentId = 1;
   string label = 2;

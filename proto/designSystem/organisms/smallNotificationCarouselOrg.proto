@@ -9,6 +9,10 @@ import "designSystem/molecules/smallNotificationMlc.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+   @see
+   https://diia.atlassian.net/wiki/spaces/DIIA/pages/1358921814/smallNotificationCarouselOrg
+*/
 message SmallNotificationCarouselOrg {
   ua.gov.diia.types.ds.atoms.DotNavigationAtm dotNavigationAtm = 1;
   repeated SmallNotificationCarouselOrgItem items = 2;

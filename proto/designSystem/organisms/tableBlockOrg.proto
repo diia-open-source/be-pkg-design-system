@@ -9,6 +9,9 @@ import "designSystem/molecules/tableSecondaryHeadingMlc.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/*
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1349353592/tableBlockOrg
+ */
 message TableBlockOrg {
   optional ua.gov.diia.types.ds.molecules.TableMainHeadingMlc tableMainHeadingMlc = 1;
   optional ua.gov.diia.types.ds.molecules.TableSecondaryHeadingMlc tableSecondaryHeadingMlc = 2;

@@ -8,6 +8,10 @@ import "designSystem/atoms/enums/tickerAtmType.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.atoms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2578120751/staticTickerAtm
+ */
+
 message StaticTickerAtmExpireLabel {
   optional string expireLabelFirst = 1;
   optional string expireLabelLast = 2;

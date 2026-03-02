@@ -9,6 +9,10 @@ import "designSystem/molecules/articleVideoMlc.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see
+ * https://diia.atlassian.net/wiki/spaces/DIIA/pages/1359020057/articlePicCarouselOrg
+ */
 message ArticlePicCarouselOrg {
   ua.gov.diia.types.ds.atoms.DotNavigationAtm dotNavigationAtm = 1;
   repeated ArticlePicCarouselItems items = 2;

@@ -7,6 +7,9 @@ import "designSystem/atoms/validationAtm.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1516044383/inputTextMultilineMlc
+ */
 message InputTextMultilineMlc {
   optional string componentId = 1;
   optional string inputCode = 2;

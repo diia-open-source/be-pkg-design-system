@@ -10,6 +10,10 @@ import "designSystem/organisms/toggleButtonGroupOrg.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see
+ * https://diia.atlassian.net/wiki/spaces/DIIA/pages/1365835783/verificationCodesOrg
+ */
 message VerificationCodesOrg {
   optional string componentId = 1;
   optional VerificationCode UA = 2;

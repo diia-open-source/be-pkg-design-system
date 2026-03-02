@@ -11,6 +11,9 @@ enum DotChipStatusMlcType {
   fail = 2;
 }
 
+/**
+ *  @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2747924542/dotChipStatusMlc
+ */
 message DotChipStatusMlc {
   string componentId = 1;
   string label = 2;

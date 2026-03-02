@@ -8,6 +8,9 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.atoms";
 
+/**
+ @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2184347649/middleIconAtm
+*/
 message MiddleIconAtm {
   string componentId = 1;
   ua.gov.diia.types.ds.icon.Icon code = 2;

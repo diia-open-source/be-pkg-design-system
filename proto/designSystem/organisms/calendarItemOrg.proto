@@ -16,6 +16,9 @@ enum LegendType {
   initial = 3;
 }
 
+/**
+ @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1434222595/calendarItemOrg
+*/
 message CalendarItemOrg {
   string componentId = 1;
   string date = 2;

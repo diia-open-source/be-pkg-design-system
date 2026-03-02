@@ -8,6 +8,9 @@ import "designSystem/icon.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.atoms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1657995345/largeIconAtm
+ */
 message LargeIconAtm {
   ua.gov.diia.types.ds.icon.Icon code = 1;
   optional string accessibilityDescription = 2;

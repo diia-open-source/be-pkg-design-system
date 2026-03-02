@@ -16,6 +16,9 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/*
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2211348523/tableBlockOrgV2
+ */
 message TableBlockOrgV2 {
   string componentId = 1;
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;

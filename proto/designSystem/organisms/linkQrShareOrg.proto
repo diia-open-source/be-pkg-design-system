@@ -11,6 +11,9 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2249392129/linkQrShareOrg
+ */
 message LinkQrShareOrg {
   reserved 6;
 

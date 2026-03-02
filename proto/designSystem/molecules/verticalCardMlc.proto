@@ -7,6 +7,10 @@ import "designSystem/atoms/badgeCounterAtm.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
+/**
+   @see
+   https://diia.atlassian.net/wiki/spaces/DIIA/pages/1371439310/verticalCardMlc
+*/
 message VerticalCardMlc {
   string image = 1;
   optional string imageAltText = 6;
