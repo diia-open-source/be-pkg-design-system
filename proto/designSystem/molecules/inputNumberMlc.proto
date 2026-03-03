@@ -27,4 +27,6 @@ message InputNumberMlc {
   optional string mask = 13;
   optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconRight = 14;
   repeated ua.gov.diia.types.ds.atoms.ValidationAtm validation = 15;
+  optional int32 minCount = 16; // min length of the input
+  optional int32 maxCount = 17; // max length of the input
 }
