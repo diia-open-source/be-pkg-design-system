@@ -5,6 +5,7 @@ package ua.gov.diia.types.ds.organisms;
 import "designSystem/atoms/greyTitleAtm.proto";
 import "designSystem/molecules/alertCardMlc.proto";
 import "designSystem/molecules/cardMlc.proto";
+import "designSystem/molecules/stubInfoMessageMlc.proto";
 import "designSystem/molecules/transparentInfoCardMlc.proto";
 import "designSystem/organisms/listItemGroupOrg.proto";
 
@@ -21,6 +22,7 @@ message UpdatedContainerOrg {
     optional ua.gov.diia.types.ds.molecules.AlertCardMlc alertCardMlc = 42;
     optional ua.gov.diia.types.ds.molecules.CardMlcV2 cardMlcV2 = 60;
     optional ua.gov.diia.types.ds.atoms.GreyTitleAtm greyTitleAtm = 71;
+    optional ua.gov.diia.types.ds.molecules.StubInfoMessageMlc stubInfoMessageMlc = 75;
     optional ua.gov.diia.types.ds.molecules.TransparentInfoCardMlc transparentInfoCardMlc = 93;
   }
 
