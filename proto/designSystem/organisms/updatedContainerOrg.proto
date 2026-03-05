@@ -28,4 +28,5 @@ message UpdatedContainerOrg {
 
   string componentId = 1;
   repeated Item items = 2;
+  optional int32 count = 3;
 }
