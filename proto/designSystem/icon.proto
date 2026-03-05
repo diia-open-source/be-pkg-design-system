@@ -246,5 +246,6 @@ enum Icon {
   safetyExtendedFeed = 296;
   linkShare = 297;
   eExcise = 298;
-  // next 299
+  time = 299;
+  // next 300
 }
