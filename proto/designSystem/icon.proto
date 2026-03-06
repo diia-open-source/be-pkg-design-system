@@ -247,5 +247,6 @@ enum Icon {
   linkShare = 297;
   eExcise = 298;
   time = 299;
-  // next 300
+  aiStarsGroup = 300;
+  // next 301
 }
