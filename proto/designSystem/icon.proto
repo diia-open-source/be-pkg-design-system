@@ -248,5 +248,6 @@ enum Icon {
   eExcise = 298;
   time = 299;
   aiStarsGroup = 300;
+  timeSmall = 301;
   // next 301
 }
