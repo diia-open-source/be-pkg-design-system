@@ -249,5 +249,7 @@ enum Icon {
   time = 299;
   aiStarsGroup = 300;
   timeSmall = 301;
-  // next 301
+  starBlack = 302;
+  downloadBlack = 303;
+  // next 304
 }
