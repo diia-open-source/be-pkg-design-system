@@ -39,4 +39,5 @@ message TransparentInfoCardAction {
   string type = 1;
   optional string subtype = 2;
   optional string resource = 3;
+  optional string subresource = 4;
 }
