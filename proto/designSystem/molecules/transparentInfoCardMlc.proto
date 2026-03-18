@@ -22,6 +22,7 @@ message TransparentInfoCardMlc {
   optional TransparentInfoCardBottomRightLabel bottomRightLabel = 6;
   optional TransparentInfoCardAction action = 7;
   optional string description = 8;
+  optional TransparentInfoCardBottomLeftLabel bottomLeftLabel = 9;
 }
 
 message TransparentInfoCardRow {
@@ -40,4 +41,14 @@ message TransparentInfoCardAction {
   optional string subtype = 2;
   optional string resource = 3;
   optional string subresource = 4;
+}
+
+message TransparentInfoCardBottomLeftLabel {
+  optional string text = 1;
+  optional TransparentInfoCardAdditionalText additionalText = 2;
+}
+
+message TransparentInfoCardAdditionalText {
+  optional string text = 1;
+  optional bool isStrikethrough = 2;
 }
