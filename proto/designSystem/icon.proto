@@ -251,5 +251,7 @@ enum Icon {
   timeSmall = 301;
   starBlack = 302;
   downloadBlack = 303;
-  // next 304
+  ellipseInfoGrey = 304;
+  checkCircle = 305;
+  // next 306
 }
