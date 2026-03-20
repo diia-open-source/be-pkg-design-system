@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/attentionIconMessageMlc.proto";
+import "designSystem/molecules/tableMainHeadingMlc.proto";
+import "designSystem/organisms/tableAccordionOrg.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2839937101/backgroundWhiteOrgV2
+ */
+message BackgroundWhiteOrgV2 {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  repeated BackgroundWhiteOrgV2Item items = 3;
+}
+
+message BackgroundWhiteOrgV2Item {
+  optional ua.gov.diia.types.ds.molecules.TableMainHeadingMlc tableMainHeadingMlc = 1;
+  optional ua.gov.diia.types.ds.organisms.TableAccordionOrg tableAccordionOrg = 2;
+  optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 3;
+}

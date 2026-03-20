@@ -49,6 +49,7 @@ import "designSystem/molecules/whiteCardMlc.proto";
 import "designSystem/organisms/articlePicCarouselOrg.proto";
 import "designSystem/organisms/attachmentsOrg.proto";
 import "designSystem/organisms/backgroundWhiteOrg.proto";
+import "designSystem/organisms/backgroundWhiteOrgV2.proto";
 import "designSystem/organisms/bankingCardCarouselOrg.proto";
 import "designSystem/organisms/bottomGroupOrg.proto";
 import "designSystem/organisms/btnIconRoundedGroupOrg.proto";
@@ -200,6 +201,7 @@ message DSBodyItem {
   optional ua.gov.diia.types.ds.organisms.AttachmentsOrg attachmentsOrg = 90;
   optional ua.gov.diia.types.ds.organisms.TableBlockTwoColumnsOrg tableBlockTwoColumnsOrg = 91;
   optional ua.gov.diia.types.ds.molecules.ScalingTitleMlc scalingTitleMlc = 92;
+  optional ua.gov.diia.types.ds.organisms.BackgroundWhiteOrgV2 backgroundWhiteOrgV2 = 93;
 }
 
 message DSTopGroupItem {

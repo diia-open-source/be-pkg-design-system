@@ -15,4 +15,6 @@ message DocNumberCopyMlc {
   string value = 2;
   optional ua.gov.diia.types.ds.atoms.IconAtm icon = 3;
   optional string componentId = 4;
+  optional string secondaryLabel = 5;
+  optional string secondaryValue = 6;
 }
