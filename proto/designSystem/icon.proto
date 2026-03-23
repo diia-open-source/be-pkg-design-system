@@ -253,5 +253,7 @@ enum Icon {
   downloadBlack = 303;
   ellipseInfoGrey = 304;
   checkCircle = 305;
-  // next 306
+  shop = 306;
+  gas = 307;
+  // next 308
 }
