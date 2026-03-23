@@ -14,6 +14,14 @@ enum DashboardCardMlcType {
   description = 2;
 }
 
+enum DashboardCardMlcColorMode {
+  green = 0;
+  blue = 1;
+  purple = 2;
+  orange = 3;
+  transparentWhite = 4;
+}
+
 /**
  * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1625686059/dashboardCardMlc
  */
@@ -29,4 +37,5 @@ message DashboardCardMlc {
   optional string descriptionCenter = 9;
   optional ua.gov.diia.types.ds.atoms.button.ButtonAction action = 10;
   optional ua.gov.diia.types.ds.atoms.BtnSemiLightAtm btnSemiLightAtm = 11;
+  optional DashboardCardMlcColorMode colorMode = 12;
 }
