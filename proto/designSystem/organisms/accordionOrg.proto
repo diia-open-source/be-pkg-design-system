@@ -3,7 +3,6 @@ syntax = "proto3";
 package ua.gov.diia.types.ds.organisms;
 
 import "designSystem/atoms/iconAction.proto";
-import "designSystem/atoms/smallIconAtm.proto";
 import "designSystem/icon.proto";
 import "designSystem/molecules/attentionIconMessageMlc.proto";
 import "designSystem/molecules/tableItemHorizontalMlc.proto";
@@ -30,7 +29,10 @@ message AccordionOrg {
 }
 
 message AccordionOrgDescriptionIcon {
-  optional ua.gov.diia.types.ds.atoms.SmallIconAtm smallIconAtm = 1;
+  ua.gov.diia.types.ds.icon.Icon code = 1;
+  optional string accessibilityDescription = 2;
+  optional ua.gov.diia.types.ds.atoms.icon.IconAction action = 3;
+  optional string componentId = 4;
 }
 
 message AccordionOrgStates {
