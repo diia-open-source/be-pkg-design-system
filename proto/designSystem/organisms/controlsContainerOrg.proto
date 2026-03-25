@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/btnPrimaryAdditionalAtm.proto";
+import "designSystem/organisms/controlItemOrg.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+enum ControlType {
+  singleChoice = 0;
+  multipleChoice = 1;
+}
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2853470218/controlsContainerOrg
+ */
+message ControlsContainerOrg {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  string inputCode = 3;
+  optional bool mandatory = 4;
+  optional int32 minMandatorySelectedItems = 5;
+  optional int32 maxMandatorySelectedItems = 6;
+  ControlType controlType = 7;
+  repeated ControlsContainerOrgItem items = 8;
+  optional ua.gov.diia.types.ds.atoms.BtnPrimaryAdditionalAtm btnPrimaryAdditionalAtm = 9;
+}
+
+message ControlsContainerOrgItem {
+  optional ua.gov.diia.types.ds.organisms.ControlItemOrg controlItemOrg = 1;
+}

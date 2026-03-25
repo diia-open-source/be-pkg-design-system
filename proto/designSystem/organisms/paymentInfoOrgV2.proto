@@ -2,8 +2,12 @@ syntax = "proto3";
 
 package ua.gov.diia.types.ds.organisms;
 
+import "designSystem/atoms/btnPrimaryAdditionalAtm.proto";
+import "designSystem/atoms/chipStatusAtm.proto";
+import "designSystem/molecules/btnIconPlainStrokeMlc.proto";
 import "designSystem/molecules/tableItemHorizontalLargeMlc.proto";
 import "designSystem/molecules/tableItemHorizontalMlc.proto";
+import "ui.proto";
 
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
@@ -13,12 +17,23 @@ option java_package = "ua.gov.diia.types.ds.organisms";
 */
 message PaymentInfoOrgV2 {
   string componentId = 1;
-  string title = 2;
-  string subtitle = 3;
+  optional string title = 2;
+  optional string subtitle = 3;
   repeated Item items = 4;
   optional ua.gov.diia.types.ds.molecules.TableItemHorizontalLargeMlc tableItemHorizontalLargeMlc = 5;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 6;
+  optional PaymentInfoOrgV2TitleWithChip titleWithChip = 7;
+  optional ua.gov.diia.types.ds.atoms.BtnPrimaryAdditionalAtm btnPrimaryAdditionalAtm = 8;
+  optional ua.gov.diia.types.ds.molecules.BtnIconPlainStrokeMlc btnIconPlainStrokeMlc = 9;
+  optional string description = 10;
 
   message Item {
     optional ua.gov.diia.types.ds.molecules.TableItemHorizontalMlc tableItemHorizontalMlc = 1;
   }
+}
+
+message PaymentInfoOrgV2TitleWithChip {
+  string text = 1;
+  optional string description = 2;
+  optional ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 3;
 }
