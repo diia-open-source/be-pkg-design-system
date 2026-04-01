@@ -4,16 +4,18 @@ package ua.gov.diia.types.ds.molecules;
 
 import "designSystem/atoms/buttonAction.proto";
 import "designSystem/atoms/smallIconAtm.proto";
+import "ui.proto";
 
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
 /**
- * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2857500725/btnIconPlainStrokeMlc
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1315602547/button#btnIconPlainStrokeMlc
  */
 message BtnIconPlainStrokeMlc {
   string componentId = 1;
   string label = 2;
   ua.gov.diia.types.ds.atoms.SmallIconAtm iconLeft = 3;
   optional ua.gov.diia.types.ds.atoms.button.ButtonAction action = 4;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 5;
 }
