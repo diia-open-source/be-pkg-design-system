@@ -1,6 +1,6 @@
 {
     "name": "@diia-inhouse/design-system",
-    "version": "3.18.0",
+    "version": "3.18.1",
     "description": "Design system types and utils",
     "main": "dist/index.js",
     "types": "dist/types/index.d.ts",
@@ -31,8 +31,8 @@
         "@bufbuild/buf": "1.66.1",
         "@bufbuild/protobuf": "2.11.0",
         "@diia-inhouse/configs": "6.1.1",
-        "@diia-inhouse/eslint-config": "8.6.0",
-        "@diia-inhouse/genproto": "3.2.3",
+        "@diia-inhouse/eslint-config": "8.8.0",
+        "@diia-inhouse/genproto": "3.2.8",
         "eslint": "9.39.4",
         "lockfile-lint": "4.14.0",
         "rimraf": "6.1.3",
