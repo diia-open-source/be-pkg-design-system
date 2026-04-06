@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1744961552/mediaGroupOrg
+ */
+message MediaGroupOrg {
+  optional string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  optional string title = 3;
+  optional string description = 4;
+  repeated string images = 5;
+  repeated string video = 6;
+}

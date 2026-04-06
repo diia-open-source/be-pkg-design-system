@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package ua.gov.diia.types.ds.molecules;
 
+import "designSystem/atoms/extraSmallIconAtm.proto";
 import "designSystem/atoms/iconAtm.proto";
 import "designSystem/atoms/simpleIconAtm.proto";
 import "ui.proto";
@@ -9,6 +10,9 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1372028978/tableItemVerticalMlc
+ */
 message TableItemVerticalMlc {
   optional string supportingValue = 1;
   optional string label = 2;
@@ -23,4 +27,12 @@ message TableItemVerticalMlc {
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 11;
   optional string pointSupportingValue = 12;
   repeated ua.gov.diia.types.ds.AttentionMessageParameter valueParameters = 13;
+  optional string text = 14;
+  optional string strikeText = 15;
+  optional TableItemVerticalMlcBlueText blueText = 16;
+}
+
+message TableItemVerticalMlcBlueText {
+  optional string text = 1;
+  optional ua.gov.diia.types.ds.atoms.ExtraSmallIconAtm iconLeft = 2;
 }
