@@ -8,6 +8,7 @@ import "designSystem/molecules/attentionIconMessageMlc.proto";
 import "designSystem/molecules/tableItemHorizontalMlc.proto";
 import "designSystem/molecules/tableItemVerticalMlc.proto";
 import "designSystem/molecules/tableMainHeadingMlc.proto";
+import "designSystem/organisms/mediaGroupOrg.proto";
 import "designSystem/organisms/tableBlockAccordionOrg.proto";
 import "ui.proto";
 
@@ -56,4 +57,5 @@ message AccordionOrgExpandedContent {
 message AccordionOrgExpandedContentItem {
   optional ua.gov.diia.types.ds.molecules.TableItemVerticalMlc tableItemVerticalMlc = 1;
   optional ua.gov.diia.types.ds.molecules.TableItemHorizontalMlc tableItemHorizontalMlc = 2;
+  optional ua.gov.diia.types.ds.organisms.MediaGroupOrg mediaGroupOrg = 3;
 }

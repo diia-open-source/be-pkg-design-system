@@ -255,5 +255,6 @@ enum Icon {
   checkCircle = 305;
   shop = 306;
   gas = 307;
-  // next 308
+  paymentsBlue = 308;
+  // next 309
 }
