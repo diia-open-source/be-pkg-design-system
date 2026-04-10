@@ -28,6 +28,7 @@ enum PaddingModeType {
   none = 0;
   medium = 1;
   large = 2;
+  extraLarge = 3;
 }
 
 enum SquareChipStatusAtmType {
@@ -139,6 +140,8 @@ message SearchInputAtm {
 message PaddingMode {
   optional PaddingModeType side = 1;
   optional PaddingModeType top = 2;
+  optional PaddingModeType start = 3;
+  optional PaddingModeType end = 4;
 }
 
 message CodeItem {

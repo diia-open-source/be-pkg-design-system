@@ -43,5 +43,5 @@ message ControlItemOrg {
 }
 
 message ControlItemOrgBodyItem {
-  optional ua.gov.diia.types.ds.molecules.TransparentInfoCardMlc transparentInfoCard = 1;
+  optional ua.gov.diia.types.ds.molecules.TransparentInfoCardMlc transparentInfoCardMlc = 1;
 }
