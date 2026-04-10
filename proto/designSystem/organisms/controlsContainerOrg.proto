@@ -25,10 +25,6 @@ message ControlsContainerOrg {
   optional int32 minMandatorySelectedItems = 5;
   optional int32 maxMandatorySelectedItems = 6;
   ControlType controlType = 7;
-  repeated ControlsContainerOrgItem items = 8;
+  repeated ua.gov.diia.types.ds.organisms.ControlItemOrg items = 8;
   optional ua.gov.diia.types.ds.atoms.BtnPrimaryAdditionalAtm btnPrimaryAdditionalAtm = 9;
-}
-
-message ControlsContainerOrgItem {
-  optional ua.gov.diia.types.ds.organisms.ControlItemOrg controlItemOrg = 1;
 }

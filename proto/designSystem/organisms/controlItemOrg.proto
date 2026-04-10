@@ -2,30 +2,27 @@ syntax = "proto3";
 
 package ua.gov.diia.types.ds.organisms;
 
+import "designSystem/atoms/checkBoxSquareAtm.proto";
+import "designSystem/atoms/radioBtnAtm.proto";
 import "designSystem/molecules/transparentInfoCardMlc.proto";
 import "ui.proto";
 
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
-enum ControlItemOrgStyleType {
-  checkBox = 0;
-  radioBtn = 1;
-}
-
 enum ControlItemOrgSizeType {
-  sizeSmall = 0;
-  sizeMedium = 1;
+  small = 0;
+  medium = 1;
 }
 
 enum ControlItemOrgAlignmentType {
-  alignTop = 0;
-  alignCenter = 1;
+  top = 0;
+  center = 1;
 }
 
-enum ControlItemOrgInnerSideSpacerType {
-  none = 0;
-  small = 1;
+message ControlItemOrgSelectorItem {
+  optional ua.gov.diia.types.ds.atoms.CheckBoxSquareAtm checkBoxSquareAtm = 1;
+  optional ua.gov.diia.types.ds.atoms.RadioBtnAtm radioBtnAtm = 2;
 }
 
 /**
@@ -34,17 +31,17 @@ enum ControlItemOrgInnerSideSpacerType {
 message ControlItemOrg {
   string componentId = 1;
   ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
-  ControlItemOrgStyleType style = 3;
+  ControlItemOrgSelectorItem selectorItem = 3;
   ControlItemOrgSizeType size = 4;
   ControlItemOrgAlignmentType alignment = 5;
-  repeated ControlItemOrgBodyItem item = 6;
+  ControlItemOrgBodyItem item = 6;
   optional string id = 7;
   optional string dataJson = 8;
   optional bool isSelected = 9;
   optional bool isEnabled = 10;
-  ControlItemOrgInnerSideSpacerType innerSideSpacer = 11;
+  string innerSideSpacer = 11;
 }
 
 message ControlItemOrgBodyItem {
-  optional ua.gov.diia.types.ds.molecules.TransparentInfoCardMlc transparentInfoCardMlc = 1;
+  optional ua.gov.diia.types.ds.molecules.TransparentInfoCardMlc transparentInfoCard = 1;
 }
