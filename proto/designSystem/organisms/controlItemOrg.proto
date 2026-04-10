@@ -10,9 +10,10 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.organisms";
 
-enum ControlItemOrgSizeType {
-  small = 0;
-  medium = 1;
+enum ControlItemOrgMeasureType {
+  none = 0;
+  small = 1;
+  medium = 2;
 }
 
 enum ControlItemOrgAlignmentType {
@@ -32,14 +33,13 @@ message ControlItemOrg {
   string componentId = 1;
   ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
   ControlItemOrgSelectorItem selectorItem = 3;
-  ControlItemOrgSizeType size = 4;
+  ControlItemOrgMeasureType size = 4;
   ControlItemOrgAlignmentType alignment = 5;
   ControlItemOrgBodyItem item = 6;
-  optional string id = 7;
-  optional string dataJson = 8;
+  string dataJson = 8;
   optional bool isSelected = 9;
   optional bool isEnabled = 10;
-  string innerSideSpacer = 11;
+  ControlItemOrgMeasureType innerSideSpacer = 11;
 }
 
 message ControlItemOrgBodyItem {
