@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/btnStrokeAdditionalAtm.proto";
+import "designSystem/atoms/iconAtm.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2894102623/stateMessageMlc
+ */
+message StateMessageMlc {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  optional ua.gov.diia.types.ds.atoms.IconAtm iconAtm = 3;
+  optional string title = 4;
+  optional string description = 5;
+  optional ua.gov.diia.types.ds.atoms.BtnStrokeAdditionalAtm btnStrokeAdditionalAtm = 6;
+}
