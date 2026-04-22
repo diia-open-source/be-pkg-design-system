@@ -11,22 +11,22 @@ option java_package = "ua.gov.diia.types.ds.organisms";
 /**
  * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2698739713
  */
-message AIChatOutgoingMessageOrg {
+message AIchatOutgoingMessageOrg {
   string componentId = 1;
-  repeated AIChatOutgoingMessageOrgItem items = 2;
-  AIChatOutgoingMessageOrgState state = 3;
+  repeated AIchatOutgoingMessageOrgItem items = 2;
+  AIchatOutgoingMessageOrgState state = 3;
   optional string message = 4;
   optional string errorMessage = 5;
 }
 
-enum AIChatOutgoingMessageOrgState {
+enum AIchatOutgoingMessageOrgState {
   regular = 0;
   sent = 1;
   pending = 2;
   failed = 3;
 }
 
-message AIChatOutgoingMessageOrgItem {
-  optional ua.gov.diia.types.ds.molecules.AIChatOutgoingMessageMlc aIChatOutgoingMessageMlc = 1;
+message AIchatOutgoingMessageOrgItem {
+  optional ua.gov.diia.types.ds.molecules.AIchatOutgoingMessageMlc AIchatOutgoingMessageMlc = 1;
   optional ua.gov.diia.types.ds.molecules.TransparentInfoCardMlc transparentInfoCardMlc = 2;
 }

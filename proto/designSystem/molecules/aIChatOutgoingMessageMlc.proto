@@ -8,24 +8,24 @@ option java_package = "ua.gov.diia.types.ds.molecules";
 /**
  * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2695856196
  */
-message AIChatOutgoingMessageMlc {
+message AIchatOutgoingMessageMlc {
   string componentId = 1;
-  repeated AIChatOutgoingMessageContent content = 2;
-  AIChatOutgoingMessageMlcState state = 3;
-  optional AIChatOutgoingMessageAction action = 4;
+  repeated AIchatOutgoingMessageContent content = 2;
+  AIchatOutgoingMessageMlcState state = 3;
+  optional AIchatOutgoingMessageAction action = 4;
 }
 
-enum AIChatOutgoingMessageMlcState {
+enum AIchatOutgoingMessageMlcState {
   draft = 0;
   regular = 1;
 }
 
-message AIChatOutgoingMessageContent {
+message AIchatOutgoingMessageContent {
   optional string label = 1;
   optional string description = 2;
 }
 
-message AIChatOutgoingMessageAction {
+message AIchatOutgoingMessageAction {
   string type = 1;
   optional string subtype = 2;
   optional string resource = 3;

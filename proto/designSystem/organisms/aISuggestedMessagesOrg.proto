@@ -10,11 +10,11 @@ option java_package = "ua.gov.diia.types.ds.organisms";
 /**
  * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2875293802
  */
-message AISuggestedMessagesOrg {
+message AIsuggestedMessagesOrg {
   string componentId = 1;
-  repeated AISuggestedMessagesOrgItem items = 2;
+  repeated AIsuggestedMessagesOrgItem items = 2;
 }
 
-message AISuggestedMessagesOrgItem {
-  optional ua.gov.diia.types.ds.molecules.AIChatOutgoingMessageMlc aIChatOutgoingMessageMlc = 1;
+message AIsuggestedMessagesOrgItem {
+  optional ua.gov.diia.types.ds.molecules.AIchatOutgoingMessageMlc AIchatOutgoingMessageMlc = 1;
 }
