@@ -61,6 +61,7 @@ import "designSystem/organisms/checkboxBtnWhiteOrg.proto";
 import "designSystem/organisms/checkboxGroupOrg.proto";
 import "designSystem/organisms/checkboxRoundGroupOrg.proto";
 import "designSystem/organisms/chipBlackGroupOrg.proto";
+import "designSystem/organisms/chipGroupOrgV2.proto";
 import "designSystem/organisms/chipTabsOrg.proto";
 import "designSystem/organisms/dashboardCardTileOrg.proto";
 import "designSystem/organisms/docHeadingOrg.proto";
@@ -202,6 +203,7 @@ message DSBodyItem {
   optional ua.gov.diia.types.ds.organisms.TableBlockTwoColumnsOrg tableBlockTwoColumnsOrg = 91;
   optional ua.gov.diia.types.ds.molecules.ScalingTitleMlc scalingTitleMlc = 92;
   optional ua.gov.diia.types.ds.organisms.BackgroundWhiteOrgV2 backgroundWhiteOrgV2 = 93;
+  optional ua.gov.diia.types.ds.organisms.ChipGroupOrgV2 chipGroupOrgV2 = 94;
 }
 
 message DSTopGroupItem {
