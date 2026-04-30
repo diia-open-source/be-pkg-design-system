@@ -52,6 +52,7 @@ message AccordionOrgIcon {
 message AccordionOrgExpandedContent {
   repeated AccordionOrgExpandedContentItem items = 1;
   optional bool showDivider = 2;
+  optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 3;
 }
 
 message AccordionOrgExpandedContentItem {

@@ -3,6 +3,7 @@ syntax = "proto3";
 package ua.gov.diia.types.ds.molecules;
 
 import "designSystem/atoms/smallIconAtm.proto";
+import "ui.proto";
 
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
@@ -15,6 +16,7 @@ message TransparentBtnMlc {
   string label = 2;
   ua.gov.diia.types.ds.atoms.SmallIconAtm iconRight = 3;
   optional TransparentBtnAction action = 4;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 5;
 }
 
 message TransparentBtnAction {
