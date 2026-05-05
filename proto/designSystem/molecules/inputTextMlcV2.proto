@@ -22,4 +22,5 @@ message InputTextMlcV2 {
   optional string value = 8;
   optional bool mandatory = 9;
   repeated ua.gov.diia.types.ds.atoms.ValidationAtm validation = 10;
+  optional string mask = 11;
 }
