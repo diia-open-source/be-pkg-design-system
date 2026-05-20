@@ -3,6 +3,7 @@ syntax = "proto3";
 package ua.gov.diia.types.ds.molecules;
 
 import "designSystem/atoms/iconAtm.proto";
+import "designSystem/atoms/textParameterAtm.proto";
 import "ui.proto";
 
 option java_multiple_files = true;
@@ -14,4 +15,5 @@ message TableMainHeadingMlc {
   optional string description = 3;
   optional string componentId = 4;
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 5;
+  repeated ua.gov.diia.types.ds.atoms.TextParameterAtm parameters = 6;
 }
