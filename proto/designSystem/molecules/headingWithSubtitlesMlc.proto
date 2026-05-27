@@ -11,7 +11,7 @@ option java_package = "ua.gov.diia.types.ds.molecules";
  @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1363836974/headingWithSubtitlesMlc
 */
 message HeadingWithSubtitlesMlc {
-  string value = 1;
+  optional string value = 1;
   repeated string subtitles = 2;
   optional string componentId = 3;
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 4;
