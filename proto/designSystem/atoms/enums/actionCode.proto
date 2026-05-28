@@ -11,4 +11,13 @@ enum ActionCode {
   drag = 2;
   syringe = 3;
   close = 4;
+  generator = 5;
+  internetAccess = 6;
+  cellularConnection = 7;
+  charging = 8;
+  water = 9;
+  heating = 10;
+  medicine = 11;
+  placeholder = 12;
+  powerBanking = 13;
 }
