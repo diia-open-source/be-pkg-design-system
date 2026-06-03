@@ -259,6 +259,10 @@ enum Icon {
   infoBlack = 309;
   paymentsGray = 310;
   clear = 311;
+  carBlackOne = 312;
+  carBlackTwo = 313;
+  carGrayOne = 314;
+  carGrayTwo = 315;
 
-  // next 312
+  // next 316
 }
