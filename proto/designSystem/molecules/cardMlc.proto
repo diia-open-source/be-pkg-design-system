@@ -7,6 +7,7 @@ import "designSystem/atoms/btnStrokeAdditionalAtm.proto";
 import "designSystem/atoms/buttonAction.proto";
 import "designSystem/atoms/chipStatusAtm.proto";
 import "designSystem/atoms/enums/tickerAtmType.proto";
+import "designSystem/atoms/extraSmallIconAtm.proto";
 import "designSystem/atoms/iconUrlAtm.proto";
 import "designSystem/atoms/smallIconAtm.proto";
 import "designSystem/atoms/tickerAtm.proto";
@@ -62,6 +63,7 @@ message CardMlcV2 {
   optional SmallIconAtmWithStates smallIconAtmWithStates = 11;
   optional string rightLabel = 12;
   optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 13;
+  repeated IconText iconTexts = 14;
 }
 
 message CardMlcChip {
@@ -76,4 +78,9 @@ message SmallIconAtmWithStates {
 message SmallIconAtmState {
   string name = 1;
   ua.gov.diia.types.ds.atoms.SmallIconAtm icon = 2;
+}
+
+message IconText {
+  string text = 1;
+  optional ua.gov.diia.types.ds.atoms.ExtraSmallIconAtm iconLeft = 2;
 }
