@@ -263,6 +263,8 @@ enum Icon {
   carBlackTwo = 313;
   carGrayOne = 314;
   carGrayTwo = 315;
+  chevronRight = 316;
+  chevronLeft = 317;
 
-  // next 316
+  // next 318
 }
