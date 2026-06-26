@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/smallIconAtm.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2941222915/photoUploadMlc
+ */
+message PhotoUploadMlc {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  optional string inputCode = 3;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconCenter = 4;
+  optional string title = 5;
+  optional string description = 6;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconRight = 7;
+  optional string image = 8;
+  optional PhotoUploadMlcAction action = 9;
+  PhotoUploadMlcState state = 10;
+}
+
+message PhotoUploadMlcAction {
+  string type = 1;
+  optional string subtype = 2;
+  optional string resource = 3;
+  optional string subresource = 4;
+}
+
+enum PhotoUploadMlcState {
+  normal = 0;
+  preview = 1;
+  error = 2;
+}

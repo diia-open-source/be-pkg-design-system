@@ -31,6 +31,7 @@ import "designSystem/molecules/inputNumberLargeMlc.proto";
 import "designSystem/molecules/loopingVideoPlayerCardMlc.proto";
 import "designSystem/molecules/navigationPanelMlcV2.proto";
 import "designSystem/molecules/paginationMessageMlc.proto";
+import "designSystem/molecules/photoUploadMlc.proto";
 import "designSystem/molecules/scalingTitleMlc.proto";
 import "designSystem/molecules/searchInputMlc.proto";
 import "designSystem/molecules/statusMessageMlc.proto";
@@ -204,6 +205,7 @@ message DSBodyItem {
   optional ua.gov.diia.types.ds.molecules.ScalingTitleMlc scalingTitleMlc = 92;
   optional ua.gov.diia.types.ds.organisms.BackgroundWhiteOrgV2 backgroundWhiteOrgV2 = 93;
   optional ua.gov.diia.types.ds.organisms.ChipGroupOrgV2 chipGroupOrgV2 = 94;
+  optional ua.gov.diia.types.ds.molecules.PhotoUploadMlc photoUploadMlc = 95;
 }
 
 message DSTopGroupItem {

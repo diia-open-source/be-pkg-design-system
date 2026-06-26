@@ -7,9 +7,12 @@ import "designSystem/atoms/extraSmallIconAtm.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2994045079/tableHeadingWithTextMlc
+ */
 message TableHeadingWithTextMlc {
   string heading = 1;
   optional string text = 2;
   optional ua.gov.diia.types.ds.atoms.ExtraSmallIconAtm extraSmallIconAtm = 3;
-  optional string componentId = 4;
+  string componentId = 4;
 }
