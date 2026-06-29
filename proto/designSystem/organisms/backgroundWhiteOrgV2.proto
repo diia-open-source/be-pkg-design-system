@@ -5,6 +5,7 @@ package ua.gov.diia.types.ds.organisms;
 import "designSystem/atoms/spacerAtm.proto";
 import "designSystem/molecules/attentionIconMessageMlc.proto";
 import "designSystem/molecules/btnIconPlainStrokeMlc.proto";
+import "designSystem/molecules/photoUploadMlc.proto";
 import "designSystem/molecules/tableMainHeadingMlc.proto";
 import "designSystem/organisms/tableAccordionOrg.proto";
 import "designSystem/organisms/tableBlockOrgV2.proto";
@@ -29,4 +30,5 @@ message BackgroundWhiteOrgV2Item {
   optional ua.gov.diia.types.ds.organisms.TableBlockOrgV2 tableBlockOrgV2 = 4;
   optional ua.gov.diia.types.ds.molecules.BtnIconPlainStrokeMlc btnIconPlainStrokeMlc = 5;
   optional ua.gov.diia.types.ds.atoms.SpacerAtm spacerAtm = 6;
+  optional ua.gov.diia.types.ds.molecules.PhotoUploadMlc photoUploadMlc = 7;
 }

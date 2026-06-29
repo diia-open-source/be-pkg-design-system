@@ -265,6 +265,8 @@ enum Icon {
   carGrayTwo = 315;
   chevronRight = 316;
   chevronLeft = 317;
+  addPhoto = 318;
+  mediaFile = 319;
 
-  // next 318
+  // next 320
 }

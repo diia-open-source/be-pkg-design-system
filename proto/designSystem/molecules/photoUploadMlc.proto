@@ -22,6 +22,7 @@ message PhotoUploadMlc {
   optional string image = 8;
   optional PhotoUploadMlcAction action = 9;
   PhotoUploadMlcState state = 10;
+  optional bool mandatory = 11;
 }
 
 message PhotoUploadMlcAction {
