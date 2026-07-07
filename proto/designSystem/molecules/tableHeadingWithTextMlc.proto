@@ -3,6 +3,7 @@ syntax = "proto3";
 package ua.gov.diia.types.ds.molecules;
 
 import "designSystem/atoms/extraSmallIconAtm.proto";
+import "ui.proto";
 
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
@@ -13,6 +14,7 @@ option java_package = "ua.gov.diia.types.ds.molecules";
 message TableHeadingWithTextMlc {
   string heading = 1;
   optional string text = 2;
-  optional ua.gov.diia.types.ds.atoms.ExtraSmallIconAtm extraSmallIconAtm = 3;
+  optional ua.gov.diia.types.ds.atoms.ExtraSmallIconAtm iconLeft = 3;
   string componentId = 4;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 5;
 }
