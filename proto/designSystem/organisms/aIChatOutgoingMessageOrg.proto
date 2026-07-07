@@ -6,6 +6,7 @@ import "designSystem/molecules/aIChatOutgoingMessageMlc.proto";
 import "designSystem/molecules/transparentInfoCardMlc.proto";
 
 option java_multiple_files = true;
+option java_outer_classname = "AIchatOutgoingMessageOrgProto";
 option java_package = "ua.gov.diia.types.ds.organisms";
 
 /**
