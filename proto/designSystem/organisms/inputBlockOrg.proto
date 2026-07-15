@@ -6,6 +6,7 @@ import "designSystem/molecules/attentionIconMessageMlc.proto";
 import "designSystem/molecules/inputTextMlcV2.proto";
 import "designSystem/molecules/tableMainHeadingMlc.proto";
 import "designSystem/molecules/tableSecondaryHeadingMlc.proto";
+import "designSystem/organisms/inputDateTimeOrgV2.proto";
 import "designSystem/organisms/inputPhoneCodeOrgV2.proto";
 import "designSystem/organisms/selectorOrgV2.proto";
 import "ui.proto";
@@ -32,4 +33,5 @@ message InputBlockOrgItem {
   optional ua.gov.diia.types.ds.organisms.SelectorOrgV2 selectorOrgV2 = 3;
   optional ua.gov.diia.types.ds.molecules.TableMainHeadingMlc tableMainHeadingMlc = 4;
   optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 5;
+  optional ua.gov.diia.types.ds.organisms.InputDateTimeOrgV2 inputDateTimeOrgV2 = 6;
 }

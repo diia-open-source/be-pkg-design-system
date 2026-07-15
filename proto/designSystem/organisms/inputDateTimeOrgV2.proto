@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/inputDateMlcV2.proto";
+import "designSystem/molecules/inputTimeMlcV2.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+/**
+ * @see
+ * https://diia.atlassian.net/wiki/spaces/DIIA/pages/3032875838/inputDateTimeOrgV2
+ */
+message InputDateTimeOrgV2 {
+  string componentId = 1;
+  optional string maxDateTime = 2;
+  optional string minDateTime = 3;
+  optional string inputCode = 4;
+  optional ua.gov.diia.types.ds.molecules.InputDateMlcV2 inputDateMlcV2 = 5;
+  optional ua.gov.diia.types.ds.molecules.InputTimeMlcV2 inputTimeMlcV2 = 6;
+}
