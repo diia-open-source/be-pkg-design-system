@@ -4,6 +4,7 @@ package ua.gov.diia.types.ds.organisms;
 
 import "designSystem/atoms/greyTitleAtm.proto";
 import "designSystem/molecules/alertCardMlc.proto";
+import "designSystem/molecules/attentionIconMessageMlc.proto";
 import "designSystem/molecules/cardMlc.proto";
 import "designSystem/molecules/paginationMessageMlc.proto";
 import "designSystem/molecules/stubInfoMessageMlc.proto";
@@ -20,6 +21,7 @@ message UpdatedContainerOrg {
   // numbers corresponds to DSBodyItem for better compatibility
   message Item {
     optional ua.gov.diia.types.ds.organisms.ListItemGroupOrg listItemGroupOrg = 6;
+    optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 41;
     optional ua.gov.diia.types.ds.molecules.AlertCardMlc alertCardMlc = 42;
     optional ua.gov.diia.types.ds.molecules.CardMlcV2 cardMlcV2 = 60;
     optional ua.gov.diia.types.ds.atoms.GreyTitleAtm greyTitleAtm = 71;

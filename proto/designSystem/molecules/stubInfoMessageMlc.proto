@@ -3,6 +3,7 @@ syntax = "proto3";
 package ua.gov.diia.types.ds.molecules;
 
 import "designSystem/atoms/iconAtm.proto";
+import "designSystem/atoms/textParameterAtm.proto";
 import "ui.proto";
 
 option java_multiple_files = true;
@@ -17,4 +18,5 @@ message StubInfoMessageMlc {
   optional ua.gov.diia.types.ds.atoms.IconAtm iconAtm = 3;
   optional string title = 4;
   optional string text = 5;
+  repeated ua.gov.diia.types.ds.atoms.TextParameterAtm parameters = 6;
 }
