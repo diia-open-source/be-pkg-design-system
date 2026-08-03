@@ -21,4 +21,11 @@ message CheckboxMlc {
   optional bool isEnabled = 7;
   string id = 8;
   optional string dataJson = 10;
+  /** initial is used when not provided */
+  optional DescriptionStyle descriptionStyle = 11;
+
+  enum DescriptionStyle {
+    initial = 0;
+    info = 1;
+  }
 }

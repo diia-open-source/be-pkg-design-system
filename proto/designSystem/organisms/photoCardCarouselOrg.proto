@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/photoCardMlc.proto";
+import "designSystem/organisms/controlsContainerOrg.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2287337632/photoCardCarouselOrg
+ */
+message PhotoCardCarouselOrg {
+  string componentId = 1;
+  optional string inputCode = 2;
+  repeated PhotoCardCarouselOrgItem items = 3;
+  optional int32 minSelectedCount = 4;
+  optional int32 maxSelectedCount = 5;
+  optional ControlType controlType = 6;
+}
+
+message PhotoCardCarouselOrgItem {
+  optional ua.gov.diia.types.ds.molecules.PhotoCardMlc photoCardMlc = 1;
+}

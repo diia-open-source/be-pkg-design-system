@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/3063873564/radioBtnElementMlc
+ */
+message RadioBtnElementMlc {
+  string componentId = 1;
+  optional string inputCode = 2;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 3;
+  string label = 4;
+  repeated RadioBtnElementMlcDescription descriptions = 5;
+  optional bool isSelected = 6;
+  optional bool isEnabled = 7;
+  optional bool mandatory = 8;
+}
+
+message RadioBtnElementMlcDescription {
+  string text = 1;
+  Style style = 2;
+
+  enum Style {
+    initial = 0;
+    hint = 1;
+  }
+}
