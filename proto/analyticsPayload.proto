@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds;
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds";
+
+message AnalyticsPayload {
+  optional string flowName = 1;
+  optional string stepName = 2;
+  optional string resource = 3;
+}

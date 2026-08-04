@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package ua.gov.diia.types.ds;
 
+import "analyticsPayload.proto";
+
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds";
 
@@ -13,4 +15,5 @@ message ProcessDataParams {
 message ProcessCodeResponse {
   int32 processCode = 1;
   optional ProcessDataParams opProcessDataParams = 2;
+  optional AnalyticsPayload analyticsPayload = 3;
 }

@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package ua.gov.diia.types.ds.item;
 
+import "analyticsPayload.proto";
 import "designSystem/atoms/articlePicAtm.proto";
 import "designSystem/atoms/btnAddOptionAtm.proto";
 import "designSystem/atoms/btnPlainAtm.proto";
@@ -237,4 +238,5 @@ message DesignSystemResponse {
   repeated DSBottomGroupItem bottomGroup = 3;
   optional int32 processCode = 4;
   optional ProcessDataParams opProcessDataParams = 5;
+  optional AnalyticsPayload analyticsPayload = 6;
 }
