@@ -12,13 +12,12 @@ option java_package = "ua.gov.diia.types.ds.molecules";
  */
 message RadioBtnElementMlc {
   string componentId = 1;
-  optional string inputCode = 2;
+  optional string id = 2;
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 3;
   string label = 4;
   repeated RadioBtnElementMlcDescription descriptions = 5;
   optional bool isSelected = 6;
   optional bool isEnabled = 7;
-  optional bool mandatory = 8;
 }
 
 message RadioBtnElementMlcDescription {
