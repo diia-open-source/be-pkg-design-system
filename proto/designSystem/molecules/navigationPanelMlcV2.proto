@@ -17,4 +17,5 @@ message NavigationPanelMlcV2 {
   optional bool isClosed = 2;
   optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconLeft = 4;
   optional string title = 5;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconRight = 6;
 }
