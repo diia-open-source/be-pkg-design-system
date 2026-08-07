@@ -1,6 +1,6 @@
 {
     "name": "@diia-inhouse/design-system",
-    "version": "4.21.1",
+    "version": "5.0.0",
     "type": "module",
     "description": "Design system types and utils",
     "main": "dist/index.js",

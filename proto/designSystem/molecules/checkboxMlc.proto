@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package ua.gov.diia.types.ds.molecules;
 
+import "designSystem/atoms/chipStatusAtm.proto";
 import "ui.proto";
 
 option java_multiple_files = true;
@@ -23,9 +24,14 @@ message CheckboxMlc {
   optional string dataJson = 10;
   /** initial is used when not provided */
   optional DescriptionStyle descriptionStyle = 11;
+  repeated CheckboxMlcChip chips = 12;
 
   enum DescriptionStyle {
     initial = 0;
     info = 1;
   }
+}
+
+message CheckboxMlcChip {
+  ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 1;
 }
