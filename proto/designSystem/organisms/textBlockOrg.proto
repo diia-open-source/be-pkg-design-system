@@ -27,6 +27,7 @@ message TextBlockOrg {
   repeated ListItem listItems = 7;
   optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 8;
   repeated ua.gov.diia.types.ds.atoms.TextParameterAtm parameters = 9;
+  optional bool showItemsTopDivider = 10;
 
   message Item {
     optional ua.gov.diia.types.ds.molecules.TextItemHorizontalMlc textItemHorizontalMlc = 1;
@@ -36,5 +37,6 @@ message TextBlockOrg {
   message ListItem {
     optional ua.gov.diia.types.ds.molecules.TableItemVerticalMlc tableItemVerticalMlc = 1;
     optional ua.gov.diia.types.ds.molecules.TableItemHorizontalMlc tableItemHorizontalMlc = 2;
+    optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 3;
   }
 }
