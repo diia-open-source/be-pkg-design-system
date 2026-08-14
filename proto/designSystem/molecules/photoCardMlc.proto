@@ -20,4 +20,5 @@ message PhotoCardMlc {
   optional ua.gov.diia.types.ds.molecules.CheckboxMlc checkboxMlc = 4;
   optional ua.gov.diia.types.ds.molecules.RadioBtnElementMlc radioBtnElementMlc = 5;
   optional ua.gov.diia.types.ds.Action action = 6;
+  optional string id = 7;
 }
