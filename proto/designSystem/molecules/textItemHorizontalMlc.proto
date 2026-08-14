@@ -15,6 +15,6 @@ message TextItemHorizontalMlc {
   string componentId = 1;
   string label = 2;
   string value = 3;
-  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconRight = 4;
+  reserved 4;
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 5;
 }
