@@ -269,6 +269,7 @@ enum Icon {
   mediaFile = 319;
   ellipseDeleteGray = 320;
   nearMe = 321;
+  whiteFaq = 322;
 
-  // next 322
+  // next 323
 }

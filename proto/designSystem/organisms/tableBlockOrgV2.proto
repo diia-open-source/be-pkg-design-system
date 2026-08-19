@@ -12,6 +12,7 @@ import "designSystem/molecules/tableItemPrimaryMlc.proto";
 import "designSystem/molecules/tableItemVerticalMlc.proto";
 import "designSystem/molecules/tableMainHeadingMlc.proto";
 import "designSystem/molecules/tableSecondaryHeadingMlc.proto";
+import "designSystem/organisms/mediaGroupOrg.proto";
 import "ui.proto";
 
 option java_multiple_files = true;
@@ -37,4 +38,5 @@ message TableBlockOrgV2Item {
   optional ua.gov.diia.types.ds.molecules.TableItemHorizontalMlc tableItemHorizontalMlc = 4;
   optional ua.gov.diia.types.ds.molecules.TableItemVerticalMlc tableItemVerticalMlc = 5;
   optional ua.gov.diia.types.ds.molecules.TableHeadingWithTextMlc tableHeadingWithTextMlc = 6;
+  optional ua.gov.diia.types.ds.organisms.MediaGroupOrg mediaGroupOrg = 7;
 }
