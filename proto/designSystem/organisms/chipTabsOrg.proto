@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package ua.gov.diia.types.ds.organisms;
 
+import "designSystem/molecules/btnSortMlc.proto";
 import "designSystem/molecules/chipMlc.proto";
 import "ui.proto";
 
@@ -25,4 +26,5 @@ message ChipTabsOrgItem {
   optional string label = 2; /* @deprecated use chipMlc */
   optional int32 count = 3; /* @deprecated use chipMlc */
   ua.gov.diia.types.ds.molecules.ChipMlc chipMlc = 4;
+  optional ua.gov.diia.types.ds.molecules.BtnSortMlc btnSortMlc = 5;
 }
