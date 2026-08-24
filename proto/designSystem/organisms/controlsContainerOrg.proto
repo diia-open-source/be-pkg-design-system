@@ -14,6 +14,11 @@ enum ControlType {
   multipleChoice = 1;
 }
 
+enum ControlItemOrgSelectionStyle {
+  filled = 0;
+  empty = 1;
+}
+
 /**
  * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/2853470218/controlsContainerOrg
  */
@@ -27,4 +32,5 @@ message ControlsContainerOrg {
   ControlType controlType = 7;
   repeated ua.gov.diia.types.ds.organisms.ControlItemOrg items = 8;
   optional ua.gov.diia.types.ds.atoms.BtnPrimaryAdditionalAtm btnPrimaryAdditionalAtm = 9;
+  optional ControlItemOrgSelectionStyle selectionStyle = 10;
 }
