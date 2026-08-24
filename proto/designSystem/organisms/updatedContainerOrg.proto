@@ -9,6 +9,7 @@ import "designSystem/molecules/cardMlc.proto";
 import "designSystem/molecules/paginationMessageMlc.proto";
 import "designSystem/molecules/stubInfoMessageMlc.proto";
 import "designSystem/molecules/transparentInfoCardMlc.proto";
+import "designSystem/organisms/contentCardOrg.proto";
 import "designSystem/organisms/listItemGroupOrg.proto";
 
 option java_multiple_files = true;
@@ -28,6 +29,7 @@ message UpdatedContainerOrg {
     optional ua.gov.diia.types.ds.molecules.StubInfoMessageMlc stubInfoMessageMlc = 75;
     optional ua.gov.diia.types.ds.molecules.PaginationMessageMlc paginationMessageMlc = 89;
     optional ua.gov.diia.types.ds.molecules.TransparentInfoCardMlc transparentInfoCardMlc = 93;
+    optional ua.gov.diia.types.ds.organisms.ContentCardOrg contentCardOrg = 97;
   }
 
   string componentId = 1;

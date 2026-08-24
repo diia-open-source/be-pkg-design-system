@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/3094609974/collapsibleTitleMlc
+ */
+message CollapsibleTitleMlc {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  optional string title = 3;
+  optional CollapsibleTitleMlcExpanded expanded = 4;
+}
+
+message CollapsibleTitleMlcExpanded {
+  string expandedText = 1;
+  string collapsedText = 2;
+  optional bool isExpanded = 3;
+}

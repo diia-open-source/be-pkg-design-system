@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/chipStatusAtm.proto";
+import "designSystem/atoms/extraSmallIconAtm.proto";
+import "designSystem/atoms/middleIconUrlAtm.proto";
+import "designSystem/atoms/smallIconAtm.proto";
+import "designSystem/molecules/tableItemVerticalMlc.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/3094577274/contentCardOrg
+ */
+message ContentCardOrg {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  optional ua.gov.diia.types.ds.atoms.ChipStatusAtm chipStatusAtm = 3;
+  optional string rightLabel = 4;
+  optional ua.gov.diia.types.ds.atoms.MiddleIconUrlAtm iconLeft = 5;
+  string label = 6;
+  optional string description = 7;
+  repeated ContentCardOrgIconText iconTexts = 8;
+  optional ContentCardOrgRightIconText rightIconText = 9;
+  optional string points = 10;
+  repeated ContentCardOrgBottomContentItem bottomContent = 11;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconBottom = 12;
+  optional ContentCardOrgAction action = 13;
+}
+
+message ContentCardOrgIconText {
+  optional string text = 1;
+  optional ua.gov.diia.types.ds.atoms.ExtraSmallIconAtm iconLeft = 2;
+}
+
+message ContentCardOrgRightIconText {
+  string text = 1;
+  optional ua.gov.diia.types.ds.atoms.ExtraSmallIconAtm iconLeft = 2;
+}
+
+message ContentCardOrgBottomContentItem {
+  optional ua.gov.diia.types.ds.molecules.TableItemVerticalMlc tableItemVerticalMlc = 1;
+}
+
+message ContentCardOrgAction {
+  string type = 1;
+  optional string subtype = 2;
+  optional string resource = 3;
+}
