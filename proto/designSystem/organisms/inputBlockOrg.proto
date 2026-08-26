@@ -3,6 +3,7 @@ syntax = "proto3";
 package ua.gov.diia.types.ds.organisms;
 
 import "designSystem/molecules/attentionIconMessageMlc.proto";
+import "designSystem/molecules/inputNumberFractionalMlc.proto";
 import "designSystem/molecules/inputTextMlcV2.proto";
 import "designSystem/molecules/tableMainHeadingMlc.proto";
 import "designSystem/molecules/tableSecondaryHeadingMlc.proto";
@@ -34,4 +35,5 @@ message InputBlockOrgItem {
   optional ua.gov.diia.types.ds.molecules.TableMainHeadingMlc tableMainHeadingMlc = 4;
   optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 5;
   optional ua.gov.diia.types.ds.organisms.InputDateTimeOrgV2 inputDateTimeOrgV2 = 6;
+  optional ua.gov.diia.types.ds.molecules.InputNumberFractionalMlc inputNumberFractionalMlc = 7;
 }
