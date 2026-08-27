@@ -20,4 +20,6 @@ message InputNumberFractionalMlc {
   optional double decimalCount = 9;
   optional bool mandatory = 10;
   optional string errorMessage = 11;
+  optional int32 minIntegerCount = 12;
+  optional bool autoFillDecimal = 13;
 }

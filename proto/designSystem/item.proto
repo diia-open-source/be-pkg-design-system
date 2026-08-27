@@ -11,6 +11,7 @@ import "designSystem/atoms/btnPrimaryWideAtm.proto";
 import "designSystem/atoms/btnWhiteLargeIconAtm.proto";
 import "designSystem/atoms/greyTitleAtm.proto";
 import "designSystem/atoms/largeTickerAtm.proto";
+import "designSystem/atoms/outlinedPicAtm.proto";
 import "designSystem/atoms/sectionTitleAtm.proto";
 import "designSystem/atoms/spacerAtm.proto";
 import "designSystem/atoms/staticTickerAtm.proto";
@@ -209,6 +210,7 @@ message DSBodyItem {
   optional ua.gov.diia.types.ds.organisms.ChipGroupOrgV2 chipGroupOrgV2 = 94;
   optional ua.gov.diia.types.ds.molecules.PhotoUploadMlc photoUploadMlc = 95;
   optional ua.gov.diia.types.ds.organisms.PhotoCardCarouselOrg photoCardCarouselOrg = 96;
+  optional ua.gov.diia.types.ds.atoms.OutlinedPicAtm outlinedPicAtm = 97;
 }
 
 message DSTopGroupItem {
