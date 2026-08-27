@@ -3,6 +3,7 @@ syntax = "proto3";
 package ua.gov.diia.types.ds.organisms;
 
 import "designSystem/atoms/checkBoxSquareAtm.proto";
+import "designSystem/atoms/outlinedPicAtm.proto";
 import "designSystem/atoms/radioBtnAtm.proto";
 import "designSystem/molecules/transparentInfoCardMlc.proto";
 import "ui.proto";
@@ -44,4 +45,5 @@ message ControlItemOrg {
 
 message ControlItemOrgBodyItem {
   optional ua.gov.diia.types.ds.molecules.TransparentInfoCardMlc transparentInfoCardMlc = 1;
+  optional ua.gov.diia.types.ds.atoms.OutlinedPicAtm outlinedPicAtm = 2;
 }

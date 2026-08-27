@@ -66,6 +66,7 @@ import "designSystem/organisms/checkboxRoundGroupOrg.proto";
 import "designSystem/organisms/chipBlackGroupOrg.proto";
 import "designSystem/organisms/chipGroupOrgV2.proto";
 import "designSystem/organisms/chipTabsOrg.proto";
+import "designSystem/organisms/controlsContainerOrg.proto";
 import "designSystem/organisms/dashboardCardTileOrg.proto";
 import "designSystem/organisms/docHeadingOrg.proto";
 import "designSystem/organisms/editAutomaticallyDeterminedValueOrg.proto";
@@ -211,6 +212,7 @@ message DSBodyItem {
   optional ua.gov.diia.types.ds.molecules.PhotoUploadMlc photoUploadMlc = 95;
   optional ua.gov.diia.types.ds.organisms.PhotoCardCarouselOrg photoCardCarouselOrg = 96;
   optional ua.gov.diia.types.ds.atoms.OutlinedPicAtm outlinedPicAtm = 97;
+  optional ua.gov.diia.types.ds.organisms.ControlsContainerOrg controlsContainerOrg = 98;
 }
 
 message DSTopGroupItem {
