@@ -8,6 +8,7 @@ import "designSystem/atoms/chipStatusAtm.proto";
 import "designSystem/atoms/enums/buttonStateAtmType.proto";
 import "designSystem/atoms/textParameterAtm.proto";
 import "designSystem/icon.proto";
+import "designSystem/molecules/btnIconPlainStrokeMlc.proto";
 
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
@@ -32,6 +33,9 @@ message ListItemMlc {
   optional string leftLogoLink = 14;
   optional string accessibilityDescription = 15;
   repeated ua.gov.diia.types.ds.atoms.TextParameterAtm parameters = 16;
+  optional bool switch = 17;
+  optional string switchValue = 18;
+  optional ua.gov.diia.types.ds.molecules.BtnIconPlainStrokeMlc btnIconPlainStrokeMlc = 19;
 }
 
 message ListItemMlcIcon {
