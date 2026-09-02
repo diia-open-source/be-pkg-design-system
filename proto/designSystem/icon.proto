@@ -270,6 +270,8 @@ enum Icon {
   ellipseDeleteGray = 320;
   nearMe = 321;
   whiteFaq = 322;
+  dotBlue = 323;
+  dotYellow = 324;
 
-  // next 323
+  // next 325
 }
