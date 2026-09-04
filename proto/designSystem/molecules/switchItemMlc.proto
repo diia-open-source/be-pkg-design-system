@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/icon.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/3139960900/switchItemMlc
+ */
+message SwitchItemMlc {
+  string componentId = 1;
+  string title = 2;
+  optional string description = 3;
+  string inputCode = 4;
+  optional bool isSelected = 5;
+  optional ua.gov.diia.types.ds.icon.Icon iconLeft = 6;
+}

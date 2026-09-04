@@ -33,9 +33,7 @@ message ListItemMlc {
   optional string leftLogoLink = 14;
   optional string accessibilityDescription = 15;
   repeated ua.gov.diia.types.ds.atoms.TextParameterAtm parameters = 16;
-  optional bool switch = 17;
-  optional string switchValue = 18;
-  optional ua.gov.diia.types.ds.molecules.BtnIconPlainStrokeMlc btnIconPlainStrokeMlc = 19;
+  optional ua.gov.diia.types.ds.molecules.BtnIconPlainStrokeMlc btnIconPlainStrokeMlc = 17;
 }
 
 message ListItemMlcIcon {

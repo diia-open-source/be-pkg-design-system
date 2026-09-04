@@ -6,6 +6,7 @@ import "designSystem/atoms/spacerAtm.proto";
 import "designSystem/molecules/attentionIconMessageMlc.proto";
 import "designSystem/molecules/btnIconPlainStrokeMlc.proto";
 import "designSystem/molecules/photoUploadMlc.proto";
+import "designSystem/molecules/switchItemMlc.proto";
 import "designSystem/molecules/tableMainHeadingMlc.proto";
 import "designSystem/organisms/tableAccordionOrg.proto";
 import "designSystem/organisms/tableBlockOrgV2.proto";
@@ -21,6 +22,7 @@ message BackgroundWhiteOrgV2 {
   string componentId = 1;
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
   repeated BackgroundWhiteOrgV2Item items = 3;
+  optional bool showDivider = 4;
 }
 
 message BackgroundWhiteOrgV2Item {
@@ -31,4 +33,5 @@ message BackgroundWhiteOrgV2Item {
   optional ua.gov.diia.types.ds.molecules.BtnIconPlainStrokeMlc btnIconPlainStrokeMlc = 5;
   optional ua.gov.diia.types.ds.atoms.SpacerAtm spacerAtm = 6;
   optional ua.gov.diia.types.ds.molecules.PhotoUploadMlc photoUploadMlc = 7;
+  optional ua.gov.diia.types.ds.molecules.SwitchItemMlc switchItemMlc = 8;
 }
