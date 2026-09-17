@@ -3,6 +3,7 @@ syntax = "proto3";
 package ua.gov.diia.types.ds.molecules;
 
 import "designSystem/atoms/btnStrokeAdditionalAtm.proto";
+import "designSystem/atoms/iconAtm.proto";
 import "designSystem/atoms/textParameterAtm.proto";
 import "ui.proto";
 
@@ -19,4 +20,5 @@ message PaginationMessageMlc {
   optional string description = 4;
   optional ua.gov.diia.types.ds.atoms.BtnStrokeAdditionalAtm btnStrokeAdditionalAtm = 5;
   repeated ua.gov.diia.types.ds.atoms.TextParameterAtm parameters = 6;
+  optional ua.gov.diia.types.ds.atoms.IconAtm iconAtm = 7;
 }

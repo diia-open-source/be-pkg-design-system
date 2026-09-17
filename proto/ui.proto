@@ -34,6 +34,11 @@ enum PaddingModeType {
 enum SquareChipStatusAtmType {
   blue = 0;
   grey = 1;
+  general = 2;
+  new = 3;
+  external = 4;
+  partner = 5;
+  recommended = 6;
 }
 
 message AttentionMessageParameterData {

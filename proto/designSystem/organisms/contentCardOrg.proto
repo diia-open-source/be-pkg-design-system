@@ -6,6 +6,7 @@ import "designSystem/atoms/chipStatusAtm.proto";
 import "designSystem/atoms/extraSmallIconAtm.proto";
 import "designSystem/atoms/middleIconUrlAtm.proto";
 import "designSystem/atoms/smallIconAtm.proto";
+import "designSystem/atoms/squareChipStatusAtm.proto";
 import "designSystem/molecules/tableItemVerticalMlc.proto";
 import "ui.proto";
 
@@ -29,6 +30,8 @@ message ContentCardOrg {
   repeated ContentCardOrgBottomContentItem bottomContent = 11;
   optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconBottom = 12;
   optional ContentCardOrgAction action = 13;
+  optional ua.gov.diia.types.ds.atoms.SquareChipStatusAtm squareChipStatusAtm = 14;
+  repeated ContentCardOrgIconTextBottom iconTextsBottom = 15;
 }
 
 message ContentCardOrgIconText {
@@ -39,6 +42,11 @@ message ContentCardOrgIconText {
 message ContentCardOrgRightIconText {
   string text = 1;
   optional ua.gov.diia.types.ds.atoms.ExtraSmallIconAtm iconLeft = 2;
+}
+
+message ContentCardOrgIconTextBottom {
+  string text = 1;
+  ua.gov.diia.types.ds.atoms.ExtraSmallIconAtm iconLeft = 2;
 }
 
 message ContentCardOrgBottomContentItem {

@@ -272,6 +272,7 @@ enum Icon {
   whiteFaq = 322;
   dotBlue = 323;
   dotYellow = 324;
+  walletSmall = 325;
 
-  // next 325
+  // next 326
 }
