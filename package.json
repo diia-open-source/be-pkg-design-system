@@ -1,6 +1,6 @@
 {
     "name": "@diia-inhouse/design-system",
-    "version": "5.18.3",
+    "version": "5.18.4",
     "type": "module",
     "description": "Design system types and utils",
     "main": "dist/index.js",
@@ -40,7 +40,7 @@
         "@bufbuild/protobuf": "2.12.0",
         "@diia-inhouse/configs": "7.2.1",
         "@diia-inhouse/genproto": "4.0.15",
-        "@diia-inhouse/oxc-config": "3.0.1",
+        "@diia-inhouse/oxc-config": "3.0.2",
         "lockfile-lint": "5.0.0",
         "oxfmt": "0.48.0",
         "oxlint": "1.63.0",
