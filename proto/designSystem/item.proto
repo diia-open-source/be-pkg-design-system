@@ -26,6 +26,7 @@ import "designSystem/molecules/btnIconPlainGroupMlc.proto";
 import "designSystem/molecules/btnLoadIconPlainGroupMlc.proto";
 import "designSystem/molecules/btnSlideMlc.proto";
 import "designSystem/molecules/cardMlc.proto";
+import "designSystem/molecules/collapsibleTitleMlc.proto";
 import "designSystem/molecules/emptyStateMlc.proto";
 import "designSystem/molecules/finalScreenBlockMlc.proto";
 import "designSystem/molecules/imageCardMlc.proto";
@@ -41,6 +42,7 @@ import "designSystem/molecules/stubInfoMessageMlc.proto";
 import "designSystem/molecules/stubMessageMlc.proto";
 import "designSystem/molecules/subTitleCentralizedMlc.proto";
 import "designSystem/molecules/subtitleLabelMlc.proto";
+import "designSystem/molecules/tableSecondaryHeadingMlc.proto";
 import "designSystem/molecules/textLabelContainerMlc.proto";
 import "designSystem/molecules/textLabelMlc.proto";
 import "designSystem/molecules/timerMlc.proto";
@@ -214,6 +216,8 @@ message DSBodyItem {
   optional ua.gov.diia.types.ds.atoms.OutlinedPicAtm outlinedPicAtm = 97;
   optional ua.gov.diia.types.ds.organisms.ControlsContainerOrg controlsContainerOrg = 98;
   optional ua.gov.diia.types.ds.organisms.CenterChipTabsOrg centerChipTabsOrg = 99;
+  optional ua.gov.diia.types.ds.molecules.CollapsibleTitleMlc collapsibleTitleMlc = 100;
+  optional ua.gov.diia.types.ds.molecules.TableSecondaryHeadingMlc tableSecondaryHeadingMlc = 101;
 }
 
 message DSTopGroupItem {

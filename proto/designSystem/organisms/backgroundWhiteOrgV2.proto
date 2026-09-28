@@ -8,6 +8,7 @@ import "designSystem/molecules/btnIconPlainStrokeMlc.proto";
 import "designSystem/molecules/photoUploadMlc.proto";
 import "designSystem/molecules/switchItemMlc.proto";
 import "designSystem/molecules/tableMainHeadingMlc.proto";
+import "designSystem/organisms/listItemGroupOrg.proto";
 import "designSystem/organisms/tableAccordionOrg.proto";
 import "designSystem/organisms/tableBlockOrgV2.proto";
 import "ui.proto";
@@ -34,4 +35,5 @@ message BackgroundWhiteOrgV2Item {
   optional ua.gov.diia.types.ds.atoms.SpacerAtm spacerAtm = 6;
   optional ua.gov.diia.types.ds.molecules.PhotoUploadMlc photoUploadMlc = 7;
   optional ua.gov.diia.types.ds.molecules.SwitchItemMlc switchItemMlc = 8;
+  optional ua.gov.diia.types.ds.organisms.ListItemGroupOrg listItemGroupOrg = 9;
 }
