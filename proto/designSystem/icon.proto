@@ -273,6 +273,8 @@ enum Icon {
   dotBlue = 323;
   dotYellow = 324;
   walletSmall = 325;
+  dotRed = 326;
+  dotGreen = 327;
 
-  // next 326
+  // next 328
 }

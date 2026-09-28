@@ -213,6 +213,7 @@ message DSBodyItem {
   optional ua.gov.diia.types.ds.organisms.PhotoCardCarouselOrg photoCardCarouselOrg = 96;
   optional ua.gov.diia.types.ds.atoms.OutlinedPicAtm outlinedPicAtm = 97;
   optional ua.gov.diia.types.ds.organisms.ControlsContainerOrg controlsContainerOrg = 98;
+  optional ua.gov.diia.types.ds.organisms.CenterChipTabsOrg centerChipTabsOrg = 99;
 }
 
 message DSTopGroupItem {
