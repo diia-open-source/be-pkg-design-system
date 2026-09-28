@@ -275,6 +275,7 @@ enum Icon {
   walletSmall = 325;
   dotRed = 326;
   dotGreen = 327;
+  fileZip = 328;
 
   // next 328
 }
