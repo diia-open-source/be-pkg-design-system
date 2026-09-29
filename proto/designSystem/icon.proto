@@ -276,7 +276,7 @@ enum Icon {
   dotRed = 326;
   dotGreen = 327;
   fileZip = 328;
-  linkBlack = 329;
+  outLinkBlack = 329;
 
   // next 330
 }

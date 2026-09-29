@@ -15,7 +15,7 @@ option java_package = "ua.gov.diia.types.ds.molecules";
 message BtnIconPlainStrokeMlc {
   string componentId = 1;
   string label = 2;
-  ua.gov.diia.types.ds.atoms.SmallIconAtm iconLeft = 3;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconLeft = 3;
   optional ua.gov.diia.types.ds.atoms.button.ButtonAction action = 4;
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 5;
 }
