@@ -25,6 +25,7 @@ message SelectorOrgV2 {
   optional SearchScreenData searchScreenData = 10;
   optional Action action = 11;
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 12;
+  optional bool isMultiline = 13;
 
   message SearchScreenData {
     optional string searchScreenTitle = 1;
