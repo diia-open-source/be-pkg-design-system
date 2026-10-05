@@ -12,6 +12,7 @@ import "designSystem/molecules/inputTextMlc.proto";
 import "designSystem/molecules/inputTextMlcV2.proto";
 import "designSystem/molecules/itemReadMlc.proto";
 import "designSystem/molecules/tableItemCheckboxMlc.proto";
+import "designSystem/molecules/tableItemHorizontalMlc.proto";
 import "designSystem/molecules/tableItemVerticalMlc.proto";
 import "designSystem/molecules/tableMainHeadingMlc.proto";
 import "designSystem/molecules/tableSecondaryHeadingMlc.proto";
@@ -20,6 +21,7 @@ import "designSystem/organisms/checkboxCascadeOrg.proto";
 import "designSystem/organisms/inputPhoneCodeOrg.proto";
 import "designSystem/organisms/inputPhoneCodeOrgV2.proto";
 import "designSystem/organisms/selectorOrg.proto";
+import "designSystem/organisms/tableItemCascadeOrg.proto";
 import "ui.proto";
 
 option java_multiple_files = true;
@@ -51,5 +53,7 @@ message BackgroundWhiteOrg {
     optional ua.gov.diia.types.ds.molecules.TableItemVerticalMlc tableItemVerticalMlc = 15;
     optional ua.gov.diia.types.ds.organisms.CheckboxCascadeGroupOrg checkboxCascadeGroupOrg = 16;
     optional ua.gov.diia.types.ds.molecules.InputNumberMlc inputNumberMlc = 17;
+    optional ua.gov.diia.types.ds.organisms.TableItemCascadeOrg tableItemCascadeOrg = 18;
+    optional ua.gov.diia.types.ds.molecules.TableItemHorizontalMlc tableItemHorizontalMlc = 19;
   }
 }
