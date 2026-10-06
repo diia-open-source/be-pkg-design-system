@@ -1,6 +1,6 @@
 {
     "name": "@diia-inhouse/design-system",
-    "version": "5.23.0",
+    "version": "5.23.1",
     "type": "module",
     "description": "Design system types and utils",
     "main": "dist/index.js",
@@ -24,12 +24,13 @@
         "prebuild": "rimraf dist",
         "build": "npm run genproto && tsc && cp -r proto dist/proto",
         "semantic-release": "semantic-release",
-        "lint": "oxlint && oxfmt --check . && buf format ./proto --diff --exit-code ",
-        "lint-fix": "oxlint --fix && oxfmt . && buf format ./proto --write",
+        "lint": "oxlint && oxfmt --check . && diia-buf-lint",
+        "lint-fix": "oxlint --fix && oxfmt . && diia-buf-lint --fix",
         "lint:lockfile": "lockfile-lint --path package-lock.json --allowed-hosts registry.npmjs.org --validate-https",
         "prepare": "npm run build",
         "find-circulars": "npx madge --circular --extensions ts ./",
-        "genproto": "npx genproto --outputDir src/generated"
+        "genproto": "buf generate",
+        "proto:breaking": "diia-buf-breaking"
     },
     "repository": "https://github.com/diia-open-source/be-pkg-design-system",
     "dependencies": {
@@ -39,7 +40,6 @@
         "@bufbuild/buf": "1.69.0",
         "@bufbuild/protobuf": "2.12.0",
         "@diia-inhouse/configs": "7.2.2",
-        "@diia-inhouse/genproto": "4.0.20",
         "@diia-inhouse/oxc-config": "3.2.0",
         "lockfile-lint": "5.0.0",
         "oxfmt": "0.48.0",
