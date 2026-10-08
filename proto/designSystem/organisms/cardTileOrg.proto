@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/miniCardMlc.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/3192161145/cardTileOrg
+ */
+message CardTileOrg {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  optional int32 columns = 3;
+  repeated CardTileOrgItem items = 4;
+}
+
+message CardTileOrgItem {
+  optional ua.gov.diia.types.ds.molecules.MiniCardMlc miniCardMlc = 1;
+}

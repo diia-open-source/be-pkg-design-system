@@ -60,6 +60,9 @@ import "designSystem/organisms/bottomGroupOrg.proto";
 import "designSystem/organisms/btnIconRoundedGroupOrg.proto";
 import "designSystem/organisms/calendarOrg.proto";
 import "designSystem/organisms/calendarOrgV2.proto";
+import "designSystem/organisms/cardCarouselScrollOrg.proto";
+import "designSystem/organisms/cardCarouselSnapOrg.proto";
+import "designSystem/organisms/cardTileOrg.proto";
 import "designSystem/organisms/centerChipTabsOrg.proto";
 import "designSystem/organisms/checkboxBtnOrg.proto";
 import "designSystem/organisms/checkboxBtnWhiteOrg.proto";
@@ -78,6 +81,7 @@ import "designSystem/organisms/inputBlockOrg.proto";
 import "designSystem/organisms/inputNumLargeTimeOrg.proto";
 import "designSystem/organisms/linkQrShareOrg.proto";
 import "designSystem/organisms/linkSettingsOrg.proto";
+import "designSystem/organisms/listImageOrg.proto";
 import "designSystem/organisms/listItemEditGroupOrg.proto";
 import "designSystem/organisms/listItemGroupOrg.proto";
 import "designSystem/organisms/mapChipTabsOrg.proto";
@@ -218,6 +222,10 @@ message DSBodyItem {
   optional ua.gov.diia.types.ds.organisms.CenterChipTabsOrg centerChipTabsOrg = 99;
   optional ua.gov.diia.types.ds.molecules.CollapsibleTitleMlc collapsibleTitleMlc = 100;
   optional ua.gov.diia.types.ds.molecules.TableSecondaryHeadingMlc tableSecondaryHeadingMlc = 101;
+  optional ua.gov.diia.types.ds.organisms.CardTileOrg cardTileOrg = 102;
+  optional ua.gov.diia.types.ds.organisms.CardCarouselScrollOrg cardCarouselScrollOrg = 103;
+  optional ua.gov.diia.types.ds.organisms.ListImageOrg listImageOrg = 104;
+  optional ua.gov.diia.types.ds.organisms.CardCarouselSnapOrg cardCarouselSnapOrg = 105;
 }
 
 message DSTopGroupItem {

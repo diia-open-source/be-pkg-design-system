@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/atoms/buttonAction.proto";
+import "designSystem/organisms/contentCardOrg.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/3203858455/cardCarouselSnapOrg
+ */
+message CardCarouselSnapOrg {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  repeated CardCarouselSnapOrgItem items = 3;
+  optional int32 itemsCount = 4;
+  optional ua.gov.diia.types.ds.atoms.button.ButtonAction action = 5;
+}
+
+message CardCarouselSnapOrgItem {
+  optional ua.gov.diia.types.ds.organisms.ContentCardOrg contentCardOrg = 1;
+}

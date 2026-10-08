@@ -4,6 +4,8 @@ package ua.gov.diia.types.ds.molecules;
 
 import "designSystem/atoms/iconAction.proto";
 import "designSystem/icon.proto";
+import "designSystem/molecules/btnSemiWhiteMlc.proto";
+import "ui.proto";
 
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
@@ -17,6 +19,8 @@ message TitleGroupMlc {
   optional TitleGroupMediumIconRight mediumIconRight = 3;
   optional LeftNavIcon leftNavIcon = 4;
   optional string componentId = 5;
+  optional ua.gov.diia.types.ds.molecules.BtnSemiWhiteMlc btnSemiWhiteMlc = 6;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 7;
 }
 
 message TitleGroupMediumIconRight {
