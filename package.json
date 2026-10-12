@@ -1,8 +1,14 @@
 {
     "name": "@diia-inhouse/design-system",
-    "version": "5.25.0",
-    "type": "module",
+    "version": "5.25.1",
     "description": "Design system types and utils",
+    "license": "MIT",
+    "author": "diia-team",
+    "repository": "https://github.com/diia-open-source/be-pkg-design-system",
+    "files": [
+        "dist"
+    ],
+    "type": "module",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "exports": {
@@ -12,13 +18,6 @@
         },
         "./dist/types/*": "./dist/*",
         "./package.json": "./package.json"
-    },
-    "author": "Diia",
-    "files": [
-        "dist"
-    ],
-    "engines": {
-        "node": ">=24"
     },
     "scripts": {
         "prebuild": "rimraf dist",
@@ -32,32 +31,33 @@
         "genproto": "buf generate",
         "proto:breaking": "diia-buf-breaking"
     },
-    "repository": "https://github.com/diia-open-source/be-pkg-design-system",
     "dependencies": {
-        "@types/node": "25.6.2"
+        "@types/node": "25.9.9"
     },
     "devDependencies": {
-        "@bufbuild/buf": "1.69.0",
-        "@bufbuild/protobuf": "2.12.0",
+        "@bufbuild/buf": "1.73.0",
+        "@bufbuild/protobuf": "2.16.0",
         "@diia-inhouse/configs": "7.2.2",
-        "@diia-inhouse/oxc-config": "3.2.0",
-        "lockfile-lint": "5.0.0",
-        "oxfmt": "0.48.0",
-        "oxlint": "1.63.0",
-        "oxlint-tsgolint": "0.22.1",
+        "@diia-inhouse/oxc-config": "4.0.2",
+        "lockfile-lint": "5.1.0",
+        "oxfmt": "0.72.0",
+        "oxlint": "1.87.0",
+        "oxlint-tsgolint": "7.0.2004",
         "rimraf": "6.1.3",
-        "semantic-release": "25.0.3",
-        "ts-proto": "2.7.0",
+        "semantic-release": "25.0.9",
+        "ts-proto": "2.15.0",
         "typescript": "5.8.3"
-    },
-    "release": {
-        "extends": "@diia-inhouse/configs/dist/semantic-release/package"
     },
     "commitlint": {
         "extends": "@diia-inhouse/configs/dist/commitlint"
     },
+    "release": {
+        "extends": "@diia-inhouse/configs/dist/semantic-release/package"
+    },
+    "engines": {
+        "node": ">=24"
+    },
     "madge": {
         "tsConfig": "./tsconfig.json"
-    },
-    "license": "MIT"
+    }
 }
