@@ -277,6 +277,9 @@ enum Icon {
   dotGreen = 327;
   fileZip = 328;
   outLinkBlack = 329;
+  exit = 330;
+  attentionColor = 331;
+  attentionIndicator = 332;
 
-  // next 330
+  // next 333
 }
