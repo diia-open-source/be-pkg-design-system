@@ -100,6 +100,7 @@ import "designSystem/organisms/radioBtnGroupOrgV2.proto";
 import "designSystem/organisms/radioBtnWithAltOrg.proto";
 import "designSystem/organisms/recursiveContainerOrg.proto";
 import "designSystem/organisms/searchBarOrg.proto";
+import "designSystem/organisms/segmentControlOrg.proto";
 import "designSystem/organisms/selectorOrg.proto";
 import "designSystem/organisms/sharingCodesOrg.proto";
 import "designSystem/organisms/singleMediaUploadGroupOrg.proto";
@@ -226,6 +227,7 @@ message DSBodyItem {
   optional ua.gov.diia.types.ds.organisms.CardCarouselScrollOrg cardCarouselScrollOrg = 103;
   optional ua.gov.diia.types.ds.organisms.ListImageOrg listImageOrg = 104;
   optional ua.gov.diia.types.ds.organisms.CardCarouselSnapOrg cardCarouselSnapOrg = 105;
+  optional ua.gov.diia.types.ds.organisms.SegmentControlOrg segmentControlOrg = 106;
 }
 
 message DSTopGroupItem {

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.organisms;
+
+import "designSystem/molecules/segmentContentMlc.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.organisms";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/3222798472/segmentControlOrg
+ */
+message SegmentControlOrg {
+  string componentId = 1;
+  string preselectedCode = 2;
+  repeated SegmentControlOrgItem items = 3;
+}
+
+message SegmentControlOrgItem {
+  optional ua.gov.diia.types.ds.molecules.SegmentContentMlc segmentContentMlc = 1;
+}
