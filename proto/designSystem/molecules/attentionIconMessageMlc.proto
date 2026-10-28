@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package ua.gov.diia.types.ds.molecules;
 
+import "designSystem/atoms/btnPrimaryAdditionalAtm.proto";
 import "designSystem/atoms/btnStrokeAdditionalAtm.proto";
 import "designSystem/atoms/smallIconAtm.proto";
 import "designSystem/atoms/textParameterAtm.proto";
@@ -28,6 +29,7 @@ message AttentionIconMessageMlc {
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 7;
   optional ua.gov.diia.types.ds.atoms.BtnStrokeAdditionalAtm btnStrokeAdditionalAtm = 8;
   optional string title = 9;
+  optional ua.gov.diia.types.ds.atoms.BtnPrimaryAdditionalAtm btnPrimaryAdditionalAtm = 10;
 }
 
 message Expanded {

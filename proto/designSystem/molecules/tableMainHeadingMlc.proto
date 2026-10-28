@@ -3,6 +3,7 @@ syntax = "proto3";
 package ua.gov.diia.types.ds.molecules;
 
 import "designSystem/atoms/iconAtm.proto";
+import "designSystem/atoms/smallIconAtm.proto";
 import "designSystem/atoms/textParameterAtm.proto";
 import "ui.proto";
 
@@ -16,4 +17,5 @@ message TableMainHeadingMlc {
   optional string componentId = 4;
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 5;
   repeated ua.gov.diia.types.ds.atoms.TextParameterAtm parameters = 6;
+  optional ua.gov.diia.types.ds.atoms.SmallIconAtm iconLeft = 7;
 }
