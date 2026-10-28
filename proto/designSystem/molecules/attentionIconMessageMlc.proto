@@ -27,6 +27,7 @@ message AttentionIconMessageMlc {
   optional Expanded expanded = 6;
   optional ua.gov.diia.types.ds.PaddingMode paddingMode = 7;
   optional ua.gov.diia.types.ds.atoms.BtnStrokeAdditionalAtm btnStrokeAdditionalAtm = 8;
+  optional string title = 9;
 }
 
 message Expanded {
