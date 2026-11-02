@@ -9,6 +9,13 @@ import "ui.proto";
 option java_multiple_files = true;
 option java_package = "ua.gov.diia.types.ds.molecules";
 
+enum InputNumberMlcCalculationOperation {
+  add = 0;
+  subtract = 1;
+  multiply = 2;
+  divide = 3;
+}
+
 /**
  * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/1505263617/inputNumberMlc
  */
@@ -29,4 +36,16 @@ message InputNumberMlc {
   repeated ua.gov.diia.types.ds.atoms.ValidationAtm validation = 15;
   optional int32 minCount = 16; // min length of the input
   optional int32 maxCount = 17; // max length of the input
+  optional InputNumberMlcTextCalculation textCalculation = 18;
+}
+
+message InputNumberMlcTextCalculation {
+  string text = 1;
+  InputNumberMlcCalculation calculation = 2;
+  optional string suffix = 3;
+}
+
+message InputNumberMlcCalculation {
+  InputNumberMlcCalculationOperation operation = 1;
+  double operand = 2;
 }
