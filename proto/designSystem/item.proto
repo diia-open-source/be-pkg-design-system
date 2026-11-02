@@ -32,6 +32,7 @@ import "designSystem/molecules/finalScreenBlockMlc.proto";
 import "designSystem/molecules/imageCardMlc.proto";
 import "designSystem/molecules/inputNumberLargeMlc.proto";
 import "designSystem/molecules/loopingVideoPlayerCardMlc.proto";
+import "designSystem/molecules/navigationPanelLogoMlc.proto";
 import "designSystem/molecules/navigationPanelMlcV2.proto";
 import "designSystem/molecules/paginationMessageMlc.proto";
 import "designSystem/molecules/photoUploadMlc.proto";
@@ -240,6 +241,7 @@ message DSTopGroupItem {
   optional ua.gov.diia.types.ds.molecules.NavigationPanelMlcV2 navigationPanelMlcV2 = 7;
   optional ua.gov.diia.types.ds.atoms.StaticTickerAtm staticTickerAtm = 8;
   optional ua.gov.diia.types.ds.organisms.CenterChipTabsOrg centerChipTabsOrg = 9;
+  optional ua.gov.diia.types.ds.molecules.NavigationPanelLogoMlc navigationPanelLogoMlc = 10;
 }
 
 message DSBottomGroupItem {

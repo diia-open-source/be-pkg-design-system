@@ -9,6 +9,7 @@ import "designSystem/molecules/tableItemHorizontalMlc.proto";
 import "designSystem/molecules/tableItemVerticalMlc.proto";
 import "designSystem/molecules/textItemHorizontalMlc.proto";
 import "designSystem/molecules/textItemVerticalMlc.proto";
+import "designSystem/molecules/titleLabelMlc.proto";
 import "ui.proto";
 
 option java_multiple_files = true;
@@ -28,6 +29,7 @@ message TextBlockOrg {
   optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 8;
   repeated ua.gov.diia.types.ds.atoms.TextParameterAtm parameters = 9;
   optional bool showItemsTopDivider = 10;
+  optional ua.gov.diia.types.ds.molecules.TitleLabelMlc titleLabelMlc = 11;
 
   message Item {
     optional ua.gov.diia.types.ds.molecules.TextItemHorizontalMlc textItemHorizontalMlc = 1;

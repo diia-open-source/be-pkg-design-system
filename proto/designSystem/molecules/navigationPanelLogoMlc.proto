@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/middleIconAtm.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/3263266823/navigationPanelLogoMlc
+ */
+message NavigationPanelLogoMlc {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.atoms.MiddleIconAtm iconLeft = 2;
+  optional string title = 3;
+  optional ua.gov.diia.types.ds.atoms.MiddleIconAtm iconRight = 4;
+  optional string backgroundImageUrl = 5;
+  optional string logoImageUrl = 6;
+}

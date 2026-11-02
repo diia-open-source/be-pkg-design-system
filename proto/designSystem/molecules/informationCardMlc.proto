@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/btnPlainAtm.proto";
+import "designSystem/atoms/btnPrimaryDefaultAtm.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/3264839703/informationCardMlc
+ */
+message InformationCardMlc {
+  string componentId = 1;
+  string image = 2;
+  optional string title = 3;
+  optional string description = 4;
+  optional ua.gov.diia.types.ds.atoms.BtnPrimaryDefaultAtm btnPrimaryDefaultAtm = 5;
+  optional ua.gov.diia.types.ds.atoms.BtnPlainAtm btnPlainAtm = 6;
+}
