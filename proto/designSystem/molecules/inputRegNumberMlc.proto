@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/validationAtm.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/3269198124/inputRegNumberMlc
+ */
+message InputRegNumberMlc {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  optional string inputCode = 3;
+  string textEmoji = 4;
+  string text = 5;
+  optional bool isDisable = 6;
+  optional string placeholder = 7;
+  optional string value = 8;
+  optional string hint = 9;
+  optional string mask = 10;
+  optional bool mandatory = 11;
+  repeated ua.gov.diia.types.ds.atoms.ValidationAtm validation = 12;
+}
