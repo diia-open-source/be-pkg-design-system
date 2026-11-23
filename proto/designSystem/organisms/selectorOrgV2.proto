@@ -28,10 +28,16 @@ message SelectorOrgV2 {
   optional bool isMultiline = 13;
 
   message SearchScreenData {
+    reserved 3;
+
     optional string searchScreenTitle = 1;
     string searchPlaceholder = 2;
-    repeated ua.gov.diia.types.ds.molecules.ListItemMlc items = 3;
+    repeated Item items = 5;
     optional ua.gov.diia.types.ds.molecules.PaginationMessageMlc paginationMessageMlc = 4;
+
+    message Item {
+      optional ua.gov.diia.types.ds.molecules.ListItemMlc listItemMlc = 1;
+    }
   }
 
   message Action {

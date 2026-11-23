@@ -10,4 +10,5 @@ enum ContentType {
   phone = 1;
   email = 2;
   timerTime = 3;
+  action = 4;
 }
