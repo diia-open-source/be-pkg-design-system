@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package ua.gov.diia.types.ds.molecules;
+
+import "designSystem/atoms/btnSmallAtm.proto";
+import "designSystem/atoms/buttonAction.proto";
+import "designSystem/atoms/squareChipStatusAtm.proto";
+import "ui.proto";
+
+option java_multiple_files = true;
+option java_package = "ua.gov.diia.types.ds.molecules";
+
+/**
+ * @see https://diia.atlassian.net/wiki/spaces/DIIA/pages/3309076503/cardExpandableMlc
+ */
+message CardExpandableMlc {
+  string componentId = 1;
+  optional ua.gov.diia.types.ds.PaddingMode paddingMode = 2;
+  string heading = 3;
+  optional string text = 4;
+  optional ua.gov.diia.types.ds.atoms.BtnSmallAtm btnSmallAtm = 5;
+  repeated CardExpandableMlcItem items = 6;
+  optional bool collapseOnScroll = 7;
+  optional ua.gov.diia.types.ds.atoms.button.ButtonAction action = 8;
+}
+
+message CardExpandableMlcItem {
+  optional ua.gov.diia.types.ds.atoms.SquareChipStatusAtm squareChipStatusAtm = 1;
+}

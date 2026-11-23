@@ -5,6 +5,7 @@ package ua.gov.diia.types.ds.organisms;
 import "designSystem/atoms/articlePicAtm.proto";
 import "designSystem/atoms/greyTitleAtm.proto";
 import "designSystem/molecules/attentionIconMessageMlc.proto";
+import "designSystem/molecules/cardExpandableMlc.proto";
 import "designSystem/molecules/cardMlc.proto";
 import "designSystem/molecules/imageCardMlc.proto";
 import "designSystem/molecules/listItemMlc.proto";
@@ -33,4 +34,5 @@ message PaginationListOrgItem {
   optional ua.gov.diia.types.ds.molecules.AttentionIconMessageMlc attentionIconMessageMlc = 7;
   optional ua.gov.diia.types.ds.molecules.PaginationMessageMlc paginationMessageMlc = 8;
   optional ua.gov.diia.types.ds.organisms.ContentCardOrg contentCardOrg = 9;
+  optional ua.gov.diia.types.ds.molecules.CardExpandableMlc cardExpandableMlc = 10;
 }
