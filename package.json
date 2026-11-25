@@ -1,6 +1,6 @@
 {
     "name": "@diia-inhouse/design-system",
-    "version": "5.35.0",
+    "version": "5.35.1",
     "description": "Design system types and utils",
     "license": "MIT",
     "author": "diia-team",
@@ -30,11 +30,11 @@
         "proto:breaking": "diia-buf-breaking"
     },
     "dependencies": {
+        "@bufbuild/protobuf": "2.16.0",
         "@types/node": "25.9.9"
     },
     "devDependencies": {
         "@bufbuild/buf": "1.73.0",
-        "@bufbuild/protobuf": "2.16.0",
         "@diia-inhouse/configs": "7.4.0",
         "@diia-inhouse/oxc-config": "6.2.1",
         "lockfile-lint": "5.1.0",
