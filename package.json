@@ -1,6 +1,6 @@
 {
     "name": "@diia-inhouse/design-system",
-    "version": "5.35.2",
+    "version": "5.35.3",
     "description": "Design system types and utils",
     "license": "MIT",
     "author": "diia-team",
@@ -36,7 +36,7 @@
     "devDependencies": {
         "@bufbuild/buf": "1.73.0",
         "@diia-inhouse/configs": "7.5.0",
-        "@diia-inhouse/oxc-config": "6.2.1",
+        "@diia-inhouse/oxc-config": "6.2.2",
         "lockfile-lint": "5.1.0",
         "oxfmt": "0.72.0",
         "oxlint": "1.87.0",
